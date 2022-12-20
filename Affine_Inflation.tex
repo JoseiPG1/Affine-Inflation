@@ -66,27 +66,106 @@ The most general action up to boundary terms is
     \end{split}
   \end{equation*}
 
+To couple the affine action to a scalar field, we need to introduce a kinetic term in the absence of the metric tensor. In order to do so, we build 
+\textit{inverse symmetric tensor densities}, by using the \textit{dimensional analysis structure technique}
+
+\begin{equation}
+      \mathrm{g}^{\mu\nu} = \left(\alpha \nabla_\lambda \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma} + \beta \mathcal{A}_\lambda 
+      \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma}\right)\mathrm{d}V^{\nu\lambda\rho\sigma} + \gamma \mathcal{B}_{\kappa}{ }^{\mu}{ }_{\lambda}
+      \mathcal{B}_{\rho}{ }^{\nu}{ }_{\sigma}\mathrm{d}V^{\kappa\lambda\rho\sigma}
+\end{equation}
+
+Using the above expression we can define the kinetic term 
+
+\begin{equation}
+    S_{\phi} = - \int \mathrm{g}^{\mu\nu} \partial_{\mu} \phi \partial_{\nu} \phi
+\end{equation}
+
+Since we want to work on the torsion-free sector, it is worth to notice that only the terms that are linear in the torsion will
+have a non-trivial contribution, $C_1$ and $C_2$. Additionally, since our connection its an \textit{equi-affine} connection, the trace of the
+Riemman tensor will vanish completly. Applying the same idea the to the scalar field action, only the $\alpha$ term survive. Thus,
+the effective action coupled with a scalar field is
+
+\begin{equation*}
+    \begin{split}
+      S_{ef}
+      & =
+      \int  \mathrm{d}V^{\alpha \beta \gamma \delta} \bigg[
+      C_1 \mathcal{R}_{\mu\alpha}{}^{\mu}{}_{\nu} - \alpha \partial_{\alpha}\phi \partial_{\nu}
+      \bigg]\nabla_\beta \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}.
+    \end{split}
+  \end{equation*}
+
 \subsection{Cosmological ansatz}
 
 The cosmological anstaz for the symmetric part of the connection $\Gamma$ is given by
-\begin{align}
-        \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
-        \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
-\end{align}
-
+  \begin{align}
+          \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
+          \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
+  \end{align}
+  
 The cosmological anstaz for the traceless torsion tensor $\mathcal{B}$ is given by
-\begin{align*}
-    \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
-    \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
-    \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
-\end{align*}
-
+  \begin{align*}
+      \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
+      \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
+      \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
+  \end{align*}
+  
 The cosmological anstaz for the vectorial torsion tensor $\mathcal{A}$ is given by
-\begin{align}
-    \mathcal{A}_{t} = \eta(t)
-\end{align}
+  \begin{align}
+      \mathcal{A}_{t} = \eta(t)
+  \end{align}
+
 
 \subsection{The field equations}
+
+The field equations are obtained using Kiwosjki's formalism and taking into account the symmetries and properties of the fundamental fields, we 
+vary the action with respect to the fundamental fields. In the torsion-free limit, the field equation is
+
+\begin{equation}
+\nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
++ \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
+\end{equation}
+
+By multiplying the left hand side of the field equation by $\epsilon_{\nu\rho\tau\beta}$, the second term vanishes completly and the field 
+equation is reduced even further to
+
+\begin{equation}
+  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
+\end{equation}
+
+The above field equation accept three different families of solution
+\begin{enumerate}
+  \item \textit{Reduced:} $\mathcal{R}_{\mu\nu} - C \partial_\mu \phi \partial_\nu \phi = 0$
+  \item \textit{Parallel:} $ \nabla_{\gamma}\left(\mathcal{R}_{\mu\nu}\frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{\gamma}\left(\partial_{\mu} \phi \partial_\nu \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0 $
+  \item \textit{Harmonic:} $ \nabla_{[\gamma}\left(\mathcal{R}_{\mu]\nu}\frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{[\gamma}\left(\partial_{\mu]} \phi \partial_\nu \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0 $
+\end{enumerate}
+
+A particular solution to the above equation is
+
+\begin{equation}
+  \mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi = \Lambda \mathcal{V}(\phi) g_{\mu\nu}
+\end{equation}
+
+which can be written as
+
+\begin{equation}
+  \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
+  C\left(\partial_\mu \phi \partial_\nu \phi - \frac{1}{2}g_{\mu\nu} (\partial \phi)^2\right)
+\end{equation}
+
+Taking the divergence $\nabla^mu$ of the above equation leads to
+
+\begin{equation}
+  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}(\phi) = 0
+\end{equation}
+
+which is the field equation for the scalar field.
+
+
 
 \section{Cosmological Solutions}
 
