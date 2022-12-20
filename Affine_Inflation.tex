@@ -1,0 +1,95 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\usepackage{vmargin}
+
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+
+
+\usepackage{slashed}
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\title{Affine Inflation in Polynomial Affine Gravity in $3+1$ dimensions}
+\author{Jose Perdiguero Garate}
+\date{20/12/2022}			
+
+\begin{document}
+
+\tableofcontents
+
+\section{Introduction}
+
+\section{Polynomial Affine Gravity}
+
+\subsection{The action}
+
+The most general action up to boundary terms is
+\begin{equation*}
+    \begin{split}
+      S
+      & =
+      \int  \mathrm{d}V^{\alpha \beta \gamma \delta} \bigg[
+      B_1 \mathcal{R}_{\mu\nu}{}^{\mu}{}_{\rho}\mathcal{B}_{\alpha}{}^{\nu}{}_{\beta}\mathcal{B}_{\gamma}{}^{\rho}{}_{\delta}
+      + B_2 \mathcal{R}_{\alpha\beta}{}^{\mu}{}_{\rho} \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta} \mathcal{B}_{\mu}{}^{\rho}{}_{\nu}
+      + B_3 \mathcal{R}_{\mu\nu}{}^{\mu}{}_{\alpha} \mathcal{B}_{\beta}{}^{\nu}{}_{\gamma} \mathcal{A}_\delta
+      + B_4 \mathcal{R}_{\alpha\beta}{}^{\sigma}{}_{\rho}\mathcal{B}_{\gamma}{}^{\rho}{}_{\delta}\mathcal{A}_\sigma
+      \\
+      & \quad
+      + B_5 \mathcal{R}_{\alpha \beta}{}^{\rho}{}_{\rho} \mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta} \mathcal{A}_\sigma
+      + C_1 \mathcal{R}_{\mu\alpha}{}^{\mu}{}_{\nu} \nabla_\beta \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}
+      + C_2 \mathcal{R}_{\alpha\beta}{}^{\rho}{}_{\rho} \nabla_\sigma \mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta}
+      + D_1 \mathcal{B}_{\nu}{}^{\mu}{}_{\lambda} \mathcal{B}_{\mu}{}^{\nu}{}_{\alpha} \nabla_\beta \mathcal{R}_{\gamma}{}^{\lambda}{}_{\delta}
+      \\
+      & \quad
+      + D_2 \mathcal{B}_{\alpha}{}^{\mu}{}_{\beta} \mathcal{B}_{\mu}{}^{\lambda}{}_{\nu} \nabla_{\lambda} \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}
+      + D_3 \mathcal{B}_{\alpha}{}^{\mu}{}_{\nu}\mathcal{B}_{\beta}{}^{\lambda}{}_{\gamma} \nabla_\lambda \mathcal{B}_{\mu}{}^{\nu}{}_{\delta}
+      + D_4 \mathcal{B}_{\alpha}{}^{\lambda}{}_{\beta}\mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta}\nabla_\lambda \mathcal{A}_\sigma
+      + D_5 \mathcal{B}_{\alpha}{}^{\lambda}{}_{\beta} \mathcal{A}_\sigma \nabla_\lambda \mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta}
+      \\
+      & \quad
+      + D_6 \mathcal{B}_{\alpha}{}^{\lambda}{}_{\beta}\mathcal{A}_\gamma \nabla_\lambda A_\delta
+      + D_7\mathcal{B}_{\alpha}{}^{\lambda}{}_{\beta} \mathcal{A}_\lambda \nabla_\gamma A_\delta
+      + E_1\nabla_\rho \mathcal{B}_{\alpha}{}^{\rho}{}_{\beta} \nabla_\sigma \mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta}
+      + E_2 \nabla_\rho \mathcal{B}_{\alpha}{}^{\rho}{}_{\beta} \nabla_\gamma \mathcal{A}_\delta
+      \\
+      &\quad
+      + F_1 \mathcal{B}_{\alpha}{}^{\mu}{}_{\beta} \mathcal{B}_{\gamma}{}^{\sigma}{}_{\delta} \mathcal{B}_{\mu}{}^{\lambda}{}_{\rho} \mathcal{B}_{\sigma}{}^{\rho}{}_{\lambda}
+      + F_2\mathcal{B}_{\alpha}{}^{\mu}{}_{\beta} \mathcal{B}_{\gamma}{}^{\nu}{}_{\lambda} \mathcal{B}_{\delta}{}^{\lambda}{}_{\rho} \mathcal{B}_{\mu}{}^{\rho}{}_{\nu}
+      + F_3 \mathcal{B}_{\nu}{}^{\mu}{}_{\lambda} \mathcal{B}_{\mu}{}^{\nu}{}_{\alpha} \mathcal{B}_{\beta}{}^{\lambda}{}_{\gamma} \mathcal{A}_\delta
+      + F_4 \mathcal{B}_{\alpha}{}^{\mu}{}_{\beta}\mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}\mathcal{A}_\mu \mathcal{A}_\nu \bigg].
+    \end{split}
+  \end{equation*}
+
+\subsection{Cosmological ansatz}
+
+The cosmological anstaz for the symmetric part of the connection $\Gamma$ is given by
+\begin{align}
+        \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
+        \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
+\end{align}
+
+The cosmological anstaz for the traceless torsion tensor $\mathcal{B}$ is given by
+\begin{align*}
+    \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
+    \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
+    \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
+\end{align*}
+
+The cosmological anstaz for the vectorial torsion tensor $\mathcal{A}$ is given by
+\begin{align}
+    \mathcal{A}_{t} = \eta(t)
+\end{align}
+
+\subsection{The field equations}
+
+\section{Cosmological Solutions}
+
+\section{Conclusions}
+
+\end{document}
