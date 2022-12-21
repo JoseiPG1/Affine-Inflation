@@ -1,6 +1,6 @@
 # Fdb version 3
-["pdflatex"] 1671638607 "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Inflation/Affine_Inflation.tex" "build/Affine_Inflation.pdf" "Affine_Inflation" 1671638607
-  "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Inflation/Affine_Inflation.tex" 1671638542 10022 c0200e53366243c02f6d94d7a3d44897 ""
+["pdflatex"] 1671639819 "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Inflation/Affine_Inflation.tex" "build/Affine_Inflation.pdf" "Affine_Inflation" 1671639820
+  "/Users/joseignacioperdiguerogarate/Documents/GitHub/Affine-Inflation/Affine_Inflation.tex" 1671639818 10539 d7750856459db1a2df4409f4f09c6e30 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -50,9 +50,9 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/pdftex/pdflatex.fmt" 1668543006 2826447 baad09eeaa9874dec94c7a13fcd7df16 ""
   "/usr/local/texlive/2022/texmf.cnf" 1647878952 577 209b46be99c9075fd74d4c0369380e8c ""
-  "Affine_Inflation.tex" 1671638542 10022 c0200e53366243c02f6d94d7a3d44897 ""
-  "build/Affine_Inflation.aux" 1671638607 781 2f0e1037ad27f6fc00a2a0a6f8ac57a5 "pdflatex"
-  "build/Affine_Inflation.toc" 1671638607 462 6af9091ffa622dda5d42d4a8c8bb877a "pdflatex"
+  "Affine_Inflation.tex" 1671639818 10539 d7750856459db1a2df4409f4f09c6e30 ""
+  "build/Affine_Inflation.aux" 1671639820 781 6d32fe03cc5a9e6cdf3b7290bc0d0a0f "pdflatex"
+  "build/Affine_Inflation.toc" 1671639820 462 b18ebe0581855c502d3ee22bc7e77d9c "pdflatex"
   (generated)
   "build/Affine_Inflation.aux"
   "build/Affine_Inflation.log"
