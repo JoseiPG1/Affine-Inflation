@@ -27,9 +27,47 @@
 
 \section{Polynomial Affine Gravity}
 
+The Polynomial Affine Gravity model its a purely affine model on which we endowed the manifold only with an affine connection 
+$(\mathcal{M}, \Gamma)$. This allow us to define the notion of parallelism by the covariant derivative $\nabla$. Since we only
+have an affine connection $\Gamma$ we can only deffine the following chain of geometric objects
+
+\begin{equation}
+  \Gamma_{\mu}{}^{\sigma}{}_{\nu} \to
+  \nabla_\mu \to \mathcal{R}_{\mu\sigma}{}^{\tau}{}_{\nu} \to \mathcal{R}_{\mu\nu}  
+\end{equation} 
+
+Notice that in the absence of the metric tensor it is not possible to define the $\mathcal{R}$.
+
 \subsection{The action}
 
-The most general action up to boundary terms is
+In order to built the action of the Polynomial Affine Gravity we use the irreducible fields of the affine connection,
+by separating the connection into its symmetric and antisymmetric part
+
+\begin{equation}
+  \hat{\Gamma}_{\mu}{}^{\sigma}{}_{\nu} = \Gamma_{\mu}{}^{\sigma}{}_{\nu} + \mathcal{B}_{\mu}{}^{\sigma}{}_{\nu} + \delta^{\sigma}_{[\mu}\mathcal{A}_{\nu]}
+\end{equation}
+
+where $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ correspond to the symmetric part of the connection, $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ its the traceless
+part of the torsion tensor and $\mathcal{A}_{\mu}$ its the vectorial part of the torsion tensor. Additionally, we need to define the volume
+form, which can be written using only the wedge product
+
+\begin{equation}
+  \mathrm{d}V^{\alpha\beta\gamma\delta} = J(x)\mathrm{d}x^{\alpha}\wedge\mathrm{d}x^{\beta}\wedge\mathrm{d}x^{\gamma}\wedge\mathrm{d}x^{\delta}
+\end{equation}
+
+However, since we want to couple a scalar field $\phi (x)$ to this model, we need to introduce the potential energy of the 
+scalar field $\mathcal{V}(\phi)$. Inspired by the work of Hemza Azri in affine inflation, we couple the potential energy to
+the volume form in the following manner
+
+\begin{equation}
+  \mathrm{d}V^{\alpha\beta\gamma\delta} = \mathrm{d}\hat{V}^{\alpha\beta\gamma\delta}\frac{1}{\mathcal{V}(\phi)}
+\end{equation}
+
+The action must preserv the invariance under diffemorphism, which is why the symmetric part of the connection goes indirectly throught the 
+covariant derivative. The fundamental fields to build the action are $\nabla, \mathcal{A}, \mathcal{B}, \mathrm{d}V$. Then we perform a sort
+of \textit{dimensional structural analysis technique} studying everysingle possible non-trivial contribution to the action.
+
+THen, the most general action in $3+1$ dimension up to boundary terms is
 \begin{equation*}
     \begin{split}
       S
@@ -134,15 +172,6 @@ equation is reduced even further to
   \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
   - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
-
-The above field equation accept three different families of solution
-\begin{enumerate}
-  \item \textit{Reduced:} $\mathcal{R}_{\mu\nu} - C \partial_\mu \phi \partial_\nu \phi = 0$
-  \item \textit{Parallel:} $ \nabla_{\gamma}\left(\mathcal{R}_{\mu\nu}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{\gamma}\left(\partial_{\mu} \phi \partial_\nu \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0 $
-  \item \textit{Harmonic:} $ \nabla_{[\gamma}\left(\mathcal{R}_{\mu]\nu}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{[\gamma}\left(\partial_{\mu]} \phi \partial_\nu \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0 $
-\end{enumerate}
 
 A particular solution to the above equation is
 
