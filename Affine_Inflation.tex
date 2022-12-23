@@ -21,6 +21,14 @@
 
 \begin{document}
 
+\maketitle
+
+\begin{abstract}
+  The Polynomial Affine Gravity its a purely affine model that mediates gravitational interactions solely and exclusive through the
+  affine connection instead of the metric tensor. In this paper we couple a scalar field through \textit{inverse tensor densities} and 
+  its potential energy to the volume form.
+\end{abstract}
+
 \tableofcontents
 
 \section{Introduction}
@@ -168,10 +176,10 @@ which can be written as
 Taking the divergence $\nabla^\mu$ of the above equation leads to
 
 \begin{equation}
-  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}(\phi) = 0
+  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
 \end{equation}
 
-which is the field equation for the scalar field.
+where $\mathcal{V}'(\phi) = \frac{\partial \mathcal{V}(\phi)}{\partial \phi}$. The above equation is the scalar field equation.
 
 \subsection{Cosmological ansatz}
 
@@ -199,7 +207,11 @@ an ansatz for this tensor compatible with the symmetries of the cosmological pri
   g_{\mu\nu} = \mathcal{F}(t)\mathrm{d}t^2 + \mathcal{G}(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
   + r^2 \sin^2 \theta \mathrm{d} \varphi^2 \right)
 \end{equation}
-Additionally, its required that $\nabla _\alpha \left(\mathcal{V}(\phi)g_{\mu\nu} \right) = 0$ 
+
+Additionally, its required that the covariant derivative of the object $g_{\mu\nu}$ must vanishes completly, from which we found that
+\begin{align}
+  \mathcal{F}(t) & = F_0 & h(t) & = \frac{\dot{\mathcal{G}(t)}}{\mathcal{G}(t)} & g(t) & = \dot{\mathcal{G}(t)}\mathcal{G}(t)
+\end{align}
 
 \section{Cosmological Solutions}
 
