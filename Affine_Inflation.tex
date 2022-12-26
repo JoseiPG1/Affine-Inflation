@@ -12,8 +12,6 @@
 
 \usepackage{slashed}
 
-\let\stdsection\section
-\renewcommand\section{\newpage\stdsection}
 
 \title{Affine Inflation in Polynomial Affine Gravity in $3+1$ dimensions}
 \author{Jose Perdiguero Garate}
@@ -179,7 +177,12 @@ Taking the divergence $\nabla^\mu$ of the above equation leads to
   C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
 \end{equation}
 
-where $\mathcal{V}'(\phi) = \frac{\partial \mathcal{V}(\phi)}{\partial \phi}$. The above equation is the scalar field equation.
+where $\mathcal{V}'(\phi) = \frac{\partial \mathcal{V}(\phi)}{\partial \phi}$. The above equation is the scalar field equation, can
+written as
+\begin{equation}
+  \nabla^\mu \nabla_\mu \phi + \beta \mathcal{V}'(\phi) = 0
+\end{equation}
+where $\beta = -\frac{\Lambda}{C}$.
 
 \subsection{Cosmological ansatz}
 
@@ -204,16 +207,37 @@ The cosmological anstaz for the vectorial torsion tensor $\mathcal{A}$ is given 
 Since, we have the tensor $g_{\mu\nu}$ presented as a particular solution to the field equation. Thus, we need to provied
 an ansatz for this tensor compatible with the symmetries of the cosmological principle
 \begin{equation}
-  g_{\mu\nu} = \mathcal{F}(t)\mathrm{d}t^2 + \mathcal{G}(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
+  g_{\mu\nu} = b(t)\mathrm{d}t^2 + a(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
   + r^2 \sin^2 \theta \mathrm{d} \varphi^2 \right)
 \end{equation}
 
 Additionally, its required that the covariant derivative of the object $g_{\mu\nu}$ must vanishes completly, from which we found that
 \begin{align}
-  \mathcal{F}(t) & = F_0 & h(t) & = \frac{\dot{\mathcal{G}(t)}}{\mathcal{G}(t)} & g(t) & = \dot{\mathcal{G}(t)}\mathcal{G}(t)
+  b(t) & = b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = -\frac{\dot{a}(t)a(t)}{b_0}
 \end{align}
 
 \section{Cosmological Solutions}
+
+Searching for possible cosmological solutions, we can distinguish three types of solution
+
+\subsection{Reduced equations}
+
+Under the cosmological ansatz the simplies form of the components of the field equations are
+\begin{align}
+  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) + \Lambda b_0 a(t)\mathcal{V}(\phi) \\
+  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) - 2b_0\kappa + \Lambda b_0 a^2(t)\mathcal{V}(\phi) \\
+  0 & = \ddot{\phi}(t) + 3\dot{a}(t)a(t)\dot{\phi}(t) + \beta \mathcal{V}'(\phi)
+\end{align}
+Combining the first two equations we obtained
+\begin{equation}
+  3H^2(t) = \frac{1}{2}C \dot{\phi}^2(t) - \Lambda b_0 \mathcal{V}(\phi) + \frac{3b_0\kappa}{a^2(t)}
+\end{equation}
+which need to be solved combined with the field equation of the scalar field. At this point we can introduce the \textit{slow-roll}
+aproximation 
+
+\subsection{Parallel equations}
+
+\subsection{Harmonic equations}
 
 \section{Conclusions}
 
