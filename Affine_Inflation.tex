@@ -24,7 +24,8 @@
 \begin{abstract}
   The Polynomial Affine Gravity its a purely affine model that mediates gravitational interactions solely and exclusive through the
   affine connection instead of the metric tensor. In this paper we couple a scalar field through \textit{inverse tensor densities} and 
-  its potential energy to the volume form.
+  its potential energy to the volume form. We formulte an effective action in the torsion-free sector couple with the scalar field and
+  study the cosmological solutions.
 \end{abstract}
 
 \tableofcontents
@@ -146,9 +147,8 @@ The field equations are obtained using Kiwosjki's formalism and taking into acco
 vary the action with respect to the fundamental fields. In the torsion-free limit, the field equation is
 
 \begin{equation}
-  \label{harmonic_feq}
-\nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
-+ \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
+  \nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
+  + \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
 \end{equation}
 
 By multiplying the left hand side of the field equation by $\epsilon_{\nu\rho\tau\beta}$, the second term vanishes completly and the field 
@@ -178,36 +178,19 @@ This is the Klein-Gordon field equation which requires the existence of the $g_{
 d'Alembert operator. Without this object, it is not possible to obtain a Klein-Gordon field equation, 
 and additionally we require that the integration constant $\Lambda \neq 0$.
 
-From eq. \Ref{harmonic_feq} we can distinguis three families of solutions along with the scalar field equation:
-
-\begin{center}
-  \textit{Reduced field equation}
-\end{center}
-\begin{equation}
-  \frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)} = \Lambda g_{\mu\nu}
-\end{equation}
-
-\begin{center}
-  \textit{Paralell field equation}
-\end{center}
-\begin{equation}
-  \nabla_\gamma \left(\frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)}\right) = \nabla_\gamma \left(\Lambda g_{\mu\nu}\right)
-\end{equation}
-
-\begin{center}
-  \textit{Harmonic field equation}
-\end{center}
+From the field equation obtained by varying the action, we distinguish two families of solutions, the first one being the
+\textit{Parallel field equation} couple with the Klein-Gordon field equation
+\begin{align}
+  \frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)} & = \Lambda g_{\mu\nu} & 
+  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) & = 0
+\end{align}
+where the Klein-Gordon field equation emerge naturally from the parallelism constraint. The second type of solution its given by
+\textit{Harmonic field equation} which is coupled with a kinetic term and potential energy
 \begin{equation}
   \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  = C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
 
-\begin{center}
-  \textit{Scalar field equation}
-\end{center}
-\begin{equation}
-  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
-\end{equation}
 
 
 \subsection{Cosmological ansatz}
@@ -244,14 +227,20 @@ Additionally, its required that the covariant derivative of the object $g_{\mu\n
 \begin{align}
   b(t) & = -b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = \frac{\dot{a}(t)a(t)}{b_0}
 \end{align}
+It is important to remark to the above definitions will only have an effect on the parallel field equation, which 
+is where the $g_{\mu\nu}$ object exist.
+
 
 \section{Cosmological Solutions}
 
-Searching for possible cosmological solutions, we can distinguish three types of solution
+Here we study all the possible solutions to the field equations under the simmetries of the cosmological principle. Notice that, in the harmonic 
+field equation the tensor $g_{\mu\nu}$ does not exist, therefore, the connection's coefficients are written just as the ones
+obtained by building the ansatz.
 
-\subsection{Reduced equations}
 
-Under the cosmological ansatz the simplies form of the components of the field equations are
+\subsection{Parallel equations}
+
+Under the cosmological ansatz the field equation for the geometric part is written as follow
 \begin{align}
   0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) - \Lambda b_0 a(t)\mathcal{V}(\phi) \\
   0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) + 2b_0\kappa - \Lambda b_0 a^2(t)\mathcal{V}(\phi)
@@ -263,12 +252,34 @@ Combining the two equations we obtained
 where the first function is the Hubble function $H(t)$. Notice that for $\kappa = 0$ we recover the classical Friedmann equation. Additionally,
 the field equation for the scalar is given by
 \begin{equation}
-  \ddot{\phi}(t) + 3a(t)\dot{a}(t)\dot{\phi}(t) - \Lambda \mathcal{V}'(\phi) = 0
+  \ddot{\phi}(t) + 3h(t)\dot{\phi}(t) + \Lambda b_0 \mathcal{V}'(\phi) = 0
 \end{equation}
+We are able to recover Einstein-Hillbert coupled with a scalar field, therefore, there is no new information in this type of solution.
 
-\subsection{Parallel equations}
 
 \subsection{Harmonic equations}
+
+Under the cosmological ansatz the field equation for the geometric part is written as follow
+\begin{equation}
+  C\mathcal{V}(\phi)g(t)\dot{\phi}^2(t) + \mathcal{V}(\phi)\left(4g(t)h^2(t) +2\kappa h(t) + 2g(t)\dot{h}(t) - \ddot{g}(t)\right) +
+  \mathcal{V}'(\phi)\dot{\phi}(t)\left(g(t)h(t) + 2\kappa + \dot{g}(t)\right) = 0
+\end{equation}
+Since we have two unknown functions of time and the scalar field, it is not possible to solve the above equation. However, if the Ricci tensor
+it is not degenerate, then it can serve the function of a metric tensor. Therefore, demanding that is covariant derivative must be trivial, the
+functions $h(t)$ and $g(t)$ are completely determined by
+\begin{align}
+  h(t) & = \sqrt{A_1}\tanh\left(t\sqrt{A_1}\right) & g(t) & = \frac{\kappa \sinh\left(2t\sqrt{A_1}\right) }{2\sqrt{A_1}}
+\end{align}
+the above defintion ensures that $\nabla_\alpha \mathcal{R}_{\beta\gamma} = 0$. Replacing these defintions into the field equation
+leads to
+\begin{equation}
+  3\sqrt{A_1}\cosh\left(t\sqrt{A_1}\right)\mathcal{V}'(\phi) + C \mathcal{V}(\phi)\dot{\phi}(t)\sinh\left(t\sqrt{A_1}\right) = 0
+\end{equation}
+At this point we can proceed as one usually does in classical cosmology, given a potential you find the scale factor and the scalar field, whereas 
+here given a potential, you only need to determined the scalar field. The most well known potetnials are the \textit{Power-Law potential} and 
+\textit{Starobinsky potential}.
+
+
 
 \section{Conclusions}
 
