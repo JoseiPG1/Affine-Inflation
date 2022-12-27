@@ -146,6 +146,7 @@ The field equations are obtained using Kiwosjki's formalism and taking into acco
 vary the action with respect to the fundamental fields. In the torsion-free limit, the field equation is
 
 \begin{equation}
+  \label{harmonic_feq}
 \nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
 + \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
 \end{equation}
@@ -165,41 +166,69 @@ A particular solution to the above equation is
 \end{equation}
 
 which can be written as
-
 \begin{equation}
   \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
   C\left(\partial_\mu \phi \partial_\nu \phi - \frac{1}{2}g_{\mu\nu} (\partial \phi)^2\right)
 \end{equation}
-
 Taking the divergence $\nabla^\mu$ of the above equation leads to
+\begin{equation}
+  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
+\end{equation}
+This is the Klein-Gordon field equation which requires the existence of the $g_{\mu\nu}$ object, to define the 
+d'Alembert operator. Without this object, it is not possible to obtain a Klein-Gordon field equation, 
+and additionally we require that the integration constant $\Lambda \neq 0$.
 
+From eq. \Ref{harmonic_feq} we can distinguis three families of solutions along with the scalar field equation:
+
+\begin{center}
+  \textit{Reduced field equation}
+\end{center}
+\begin{equation}
+  \frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)} = \Lambda g_{\mu\nu}
+\end{equation}
+
+\begin{center}
+  \textit{Paralell field equation}
+\end{center}
+\begin{equation}
+  \nabla_\gamma \left(\frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)}\right) = \nabla_\gamma \left(\Lambda g_{\mu\nu}\right)
+\end{equation}
+
+\begin{center}
+  \textit{Harmonic field equation}
+\end{center}
+\begin{equation}
+  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
+  = C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) 
+\end{equation}
+
+\begin{center}
+  \textit{Scalar field equation}
+\end{center}
 \begin{equation}
   C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
 \end{equation}
 
-where $\mathcal{V}'(\phi) = \frac{\partial \mathcal{V}(\phi)}{\partial \phi}$. The above equation is the scalar field equation, can
-written as
-\begin{equation}
-  \nabla^\mu \nabla_\mu \phi + \beta \mathcal{V}'(\phi) = 0
-\end{equation}
-where $\beta = -\frac{\Lambda}{C}$.
 
 \subsection{Cosmological ansatz}
 
-The cosmological anstaz for the symmetric part of the connection $\Gamma$ is given by
-  \begin{align}
-          \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
-          \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
-  \end{align}
+In order to solve the field equations, one need to build an ansatz, since we want to do cosmology, we need to build an ansazts
+compatible with the symmetries of the cosmological principle, which are rotation and translations. It is possible to build an ansatz for our
+fundamental geometric objects using the Lie derivative along the Killing vector fields. The most general ansatz for the symmetric part of the 
+connection $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ is
+\begin{align}
+      \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
+      \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
+\end{align}
   
-The cosmological anstaz for the traceless torsion tensor $\mathcal{B}$ is given by
+the traceless part of the torsion tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
   \begin{align*}
       \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
       \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
       \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
   \end{align*}
   
-The cosmological anstaz for the vectorial torsion tensor $\mathcal{A}$ is given by
+and finally, the vectorial torsion tensor $\mathcal{A}_\mu$ is given by
   \begin{align}
       \mathcal{A}_{t} = \eta(t)
   \end{align}
@@ -213,7 +242,7 @@ an ansatz for this tensor compatible with the symmetries of the cosmological pri
 
 Additionally, its required that the covariant derivative of the object $g_{\mu\nu}$ must vanishes completly, from which we found that
 \begin{align}
-  b(t) & = b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = -\frac{\dot{a}(t)a(t)}{b_0}
+  b(t) & = -b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = \frac{\dot{a}(t)a(t)}{b_0}
 \end{align}
 
 \section{Cosmological Solutions}
@@ -224,16 +253,18 @@ Searching for possible cosmological solutions, we can distinguish three types of
 
 Under the cosmological ansatz the simplies form of the components of the field equations are
 \begin{align}
-  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) + \Lambda b_0 a(t)\mathcal{V}(\phi) \\
-  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) - 2b_0\kappa + \Lambda b_0 a^2(t)\mathcal{V}(\phi) \\
-  0 & = \ddot{\phi}(t) + 3\dot{a}(t)a(t)\dot{\phi}(t) + \beta \mathcal{V}'(\phi)
-\end{align}
-Combining the first two equations we obtained
+  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) - \Lambda b_0 a(t)\mathcal{V}(\phi) \\
+  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) + 2b_0\kappa - \Lambda b_0 a^2(t)\mathcal{V}(\phi)
+  \end{align}
+Combining the two equations we obtained
 \begin{equation}
-  3H^2(t) = \frac{1}{2}C \dot{\phi}^2(t) - \Lambda b_0 \mathcal{V}(\phi) + \frac{3b_0\kappa}{a^2(t)}
+  3H^2(t) = \Lambda b_0 \mathcal{V}(\phi) -\frac{1}{2}C \dot{\phi}^2(t) - \frac{3b_0\kappa}{a^2(t)}
 \end{equation}
-which need to be solved combined with the field equation of the scalar field. At this point we can introduce the \textit{slow-roll}
-aproximation 
+where the first function is the Hubble function $H(t)$. Notice that for $\kappa = 0$ we recover the classical Friedmann equation. Additionally,
+the field equation for the scalar is given by
+\begin{equation}
+  \ddot{\phi}(t) + 3a(t)\dot{a}(t)\dot{\phi}(t) - \Lambda \mathcal{V}'(\phi) = 0
+\end{equation}
 
 \subsection{Parallel equations}
 
