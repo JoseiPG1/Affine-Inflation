@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  28 DEC 2022 15:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.11.15)  30 DEC 2022 16:06
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,7 +174,7 @@ Overfull \hbox (15.25447pt too wide) detected at line 112
  []
 
 [2] [3] [4]
-Overfull \hbox (6.24638pt too wide) detected at line 302
+Overfull \hbox (6.24638pt too wide) detected at line 312
 []\OML/cmm/m/it/10 C\OMS/cmsy/m/n/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 g\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) + \OMS/cmsy/m/n/10 V\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 ) [] + \OMS/cmsy/m/n/10 V[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^^\OT1/cmr/m/n/10 )[](\OML/cmm/m/it/10 t\OT1/cmr/m/n/10 ) [] = 0
  []
 
@@ -182,13 +182,13 @@ Overfull \hbox (6.24638pt too wide) detected at line 302
 Here is how much of TeX's memory you used:
  2683 strings out of 478268
  40148 string characters out of 5846346
- 345548 words of memory out of 5000000
+ 343548 words of memory out of 5000000
  20872 multiletter control sequences out of 15000+600000
  479667 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,19n,62p,302b,198s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb>
-Output written on build/Affine_Inflation.pdf (5 pages, 210071 bytes).
+Output written on build/Affine_Inflation.pdf (5 pages, 211072 bytes).
 PDF statistics:
  95 PDF objects out of 1000 (max. 8388607)
  57 compressed objects within 1 object stream
