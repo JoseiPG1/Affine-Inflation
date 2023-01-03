@@ -6,10 +6,6 @@
 
 \usepackage{vmargin}
 
-\usepackage{graphicx}
-\graphicspath{ {./images/} }
-
-
 \usepackage{slashed}
 
 
@@ -314,7 +310,7 @@ Since we have two unknown functions of time and the scalar field, it is not poss
 it is not degenerate, then it can serve the function as a metric tensor. Therefore, demanding that is covariant derivative must be zero, 
 the above equation is reduced to
 \begin{equation} 
-  \dot{\phi}(t) + \frac{ 3\sqrt{A_1}\cosh\left(t\sqrt{A_1}\right)}{C\sinh\left(t\sqrt{A_1}\right)}\left(\frac{\mathcal{V}'(\phi)}{\mathcal{V}(\phi)}\right) = 0
+  \dot{\phi}(t) + \frac{3\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{\mathcal{V}'(\phi)}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
 At this point we can proceed as one usually does in classical cosmology, given a potential you find the scale factor and the scalar field, whereas 
 here given a potential, you only need to determined the scalar field. The most well known potentials are the \textit{Power-Law potential} and 
@@ -322,16 +318,22 @@ here given a potential, you only need to determined the scalar field. The most w
 
 Taking first the \textit{Power-Law potential} meaning $\mathcal{V}(\phi) = \beta \phi^n(t)$, then the above equation leads as
 \begin{equation}
-  \dot{\phi}(t) + \frac{1}{\phi(t)}\left(\frac{3\sqrt{A_1}\cosh(t\sqrt{A_1})}{C\sinh(t\sqrt{A_1})}\right) = 0
+  \dot{\phi}(t) + \frac{3\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\phi^{-1}(t)n\right) = 0
 \end{equation}
-which can be solved analytically.
+which can be solved analytically
+\begin{equation}
+  \phi(t) = \pm \sqrt{\frac{2C\phi_0 - 6n\log(\cosh(t\sqrt{A_1}))}{C} }
+\end{equation}
 
 Then we take \textit{Starobinsky potential} written as $\mathcal{V}(\phi) =  \alpha \left(1 - e^{-\beta\phi}\right)^2$, the equation takes
 the form of
 \begin{equation}
-  \dot{\phi}(t) + e^{-\beta\phi}\left(\frac{6\beta\sqrt{A_1}\cosh(t\sqrt{A_1})}{C\sinh(t\sqrt{A_1})}\right) = 0
+  \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{1}{\left(1 - e^{-\beta\phi}\right)}\right) = 0
 \end{equation}
 which can be solved analytically.
+
+Another approuch to solve the harmonic field equation, its to solve its simplified version menaning the reduced scenario $\mathcal{S}_{\mu\nu} = 0$
+or the parallel equation $\nabla_\gamma\mathcal{S}_{\mu\nu} = 0$. Let us consider first, the reduced case
 
 
 \section{Conclusions}
