@@ -242,11 +242,8 @@ where the Klein-Gordon field equation emerge naturally from the parallelism cons
 
 \section{Cosmological Solutions}
 
-Here we study all the possible solutions to the field equations under the simmetries of the cosmological principle. Notice that, in the harmonic 
-field equation the tensor $g_{\mu\nu}$ does not exist, therefore, the connection's coefficients are written just as the ones
-obtained by building the ansatz.
-
-The Ricci tensor can be use as an emergent metric tensor only when its well defined and not degenerate, meaning its temporal and spatial
+Here we study all the possible solutions to the field equations under the simmetries of the cosmological principle. Notice that, the 
+Ricci tensor can be use as an emergent metric tensor only when its well defined and not degenerate, meaning its temporal and spatial
 part are not trivial. Under the cosmological ansatz the Ricci tensor is 
 \begin{align}
   \mathcal{R}_{tt} & = -3\left(\dot{h}(t) + h^2(t)\right) & \mathcal{R}_{rr} & = \frac{\dot{g}(t) + g(t)h(t) + 2\kappa}{1 - \kappa r^2}
@@ -330,7 +327,12 @@ the form of
 \begin{equation}
   \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{1}{\left(1 - e^{-\beta\phi}\right)}\right) = 0
 \end{equation}
-which can be solved analytically.
+which can be solved analytically in terms of the inverse hypergeometric functions.
+
+Notice that for the above well-known potential in the cosmology literature, in our formulation it is a condition that $\kappa \neq 0$ in order
+to have non-trivial field equation, whereas in FRW coupled with a scalar field, its a constraint that $\kappa = 0$, these is a strong difference
+between our geometries. Additionally, while in FRW one needs to impose the \textit{slow-roll} conditions to solve the field equations, here
+in the absence of those approximation we are able to solve the field equations.
 
 Another approuch to solve the harmonic field equation, its to solve its simplified version menaning the reduced scenario $\mathcal{S}_{\mu\nu} = 0$
 or the parallel equation $\nabla_\gamma\mathcal{S}_{\mu\nu} = 0$. Let us consider first, the reduced case. In this set up, we have two equations
@@ -347,8 +349,32 @@ the scalar field
 \begin{equation}
   \phi(t) = \pm\sqrt{-\frac{A_1}{C}}t + \phi_0
 \end{equation}
+This type of solution its not usefull because the scalar field $\phi(t)$ its a linear increase function of time, meaning that the inflation
+will never stop. 
 
 The second case its the parallel scenario. Here we have three equations
+\begin{align}
+  0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
+  \left(h^{2} + \dot{h}\right) \\
+  0 & = Cg\dot{\phi}^2 + 2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} \\
+  0 & = \left(2gh^2 + 4\kappa h +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + 2\kappa + \dot{g}\right)\mathcal{V}'\dot{\phi}
+\end{align}
+Demanding that the Ricci tensor covariant derivative vanishes, the equations reduced to
+\begin{align}
+  0 & = C\mathcal{V}'\dot{\phi}^3 - 2C\mathcal{V}\dot{\phi}\ddot{\phi} + 3A_1 \mathcal{V}'\dot{\phi}\\
+  0 & = C\kappa \cosh(t\sqrt{A_1})\sinh(t\sqrt{A_1})\dot{\phi} \\
+  0 & = \kappa \cosh(t\sqrt{A_1})\mathcal{V}'\dot{\phi}
+\end{align}
+the last two equations can be solve simultaneously by fixing $\kappa = 0$, additionally, the first equation can be rewritten as
+\begin{equation}
+  \ddot{\phi} - \frac{1}{2}\dot{\phi}^2\left(\frac{\mathcal{V}'}{\mathcal{V}}\right) + \frac{3A_1}{2C}\left(\frac{\mathcal{V}'}{\mathcal{V}}\right) = 0
+\end{equation}
+Here, just like before we can give the potential energy term $\mathcal{V}(\phi)$, taking the potential \textit{Power-Law} the scalar field
+can be solved in terms of inverse hypergeometric functions, but for $n = 0 , 1 , 2$ we have an analytically expression. In the case of Starobinsky
+potential, the scalar field is written in terms of inverse hyperbolic tangent function. Notice that in this situation, we need to constraint $\kappa = 0$ to have non-trivial field equation, this, in some sense matches what
+happens with the $\kappa$ factor in FRW coupled with a scalarfield. 
+
+
 
 \section{Conclusions}
 
