@@ -6,4 +6,4 @@
 \contentsline {section}{\numberline {3}Cosmological Solutions}{4}{}%
 \contentsline {subsection}{\numberline {3.1}Reduced equations}{4}{}%
 \contentsline {subsection}{\numberline {3.2}Harmonic equations}{5}{}%
-\contentsline {section}{\numberline {4}Conclusions}{6}{}%
+\contentsline {section}{\numberline {4}Conclusions}{7}{}%

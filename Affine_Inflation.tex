@@ -300,8 +300,8 @@ where the $\mathcal{S}_{\mu\nu}$ tensor is a symmetric tensor defined by
 \end{equation}
 The \textit{Harmonic field equation} under the symmetries of the cosmological ansatz can be written as follow
 \begin{equation}
-  C\mathcal{V}(\phi)g(t)\dot{\phi}^2(t) + \mathcal{V}(\phi)\left(4g(t)h^2(t) +2\kappa h(t) + 2g(t)\dot{h}(t) - \ddot{g}(t)\right) +
-  \mathcal{V}'(\phi)\dot{\phi}(t)\left(g(t)h(t) + 2\kappa + \dot{g}(t)\right) = 0
+  C\mathcal{V}(\phi)g\dot{\phi}^2 + \mathcal{V}(\phi)\left(4gh^2 +2\kappa h + 2g\dot{h} - \ddot{g}\right) +
+  \mathcal{V}'(\phi)\dot{\phi}\left(gh + 2\kappa + \dot{g}\right) = 0
 \end{equation}
 Since we have two unknown functions of time and the scalar field, it is not possible to solve the above equation. However, if the Ricci tensor
 it is not degenerate, then it can serve the function as a metric tensor. Therefore, demanding that is covariant derivative must be zero, 
@@ -334,8 +334,8 @@ to have non-trivial field equation, whereas in FRW coupled with a scalar field, 
 between our geometries. Additionally, while in FRW one needs to impose the \textit{slow-roll} conditions to solve the field equations, here
 in the absence of those approximation we are able to solve the field equations.
 
-Another approuch to solve the harmonic field equation, its to solve its simplified version menaning the reduced scenario $\mathcal{S}_{\mu\nu} = 0$
-or the parallel equation $\nabla_\gamma\mathcal{S}_{\mu\nu} = 0$. Let us consider first, the reduced case. In this set up, we have two equations
+Another approuch to solve the harmonic field equation, its to solve its simplified version menaning the affine reduced scenario $\mathcal{S}_{\mu\nu} = 0$
+or the affine parallel equation $\nabla_\gamma\mathcal{S}_{\mu\nu} = 0$. Let us consider first, the reduced case. In this set up, we have two equations
 \begin{align}
   \dot{h}(t) + h^2(t) + C\dot{\phi}^2(t) & = 0 & \dot{g}(t) + g(t)h(t) + 2\kappa & = 0
 \end{align}
@@ -352,7 +352,7 @@ the scalar field
 This type of solution its not usefull because the scalar field $\phi(t)$ its a linear increase function of time, meaning that the inflation
 will never stop. 
 
-The second case its the parallel scenario. Here we have three equations
+The second case its the affine parallel scenario. Here we have three equations
 \begin{align}
   0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
   \left(h^{2} + \dot{h}\right) \\
@@ -373,6 +373,24 @@ Here, just like before we can give the potential energy term $\mathcal{V}(\phi)$
 can be solved in terms of inverse hypergeometric functions, but for $n = 0 , 1 , 2$ we have an analytically expression. In the case of Starobinsky
 potential, the scalar field is written in terms of inverse hyperbolic tangent function. Notice that in this situation, we need to constraint $\kappa = 0$ to have non-trivial field equation, this, in some sense matches what
 happens with the $\kappa$ factor in FRW coupled with a scalarfield. 
+
+One could go even further and try to use the \textit{slow-roll} conditions, meaning that the kinetic energy of the scalar field its 
+neglectable with respect to the potential energy
+\begin{align}
+  \mathcal{V}(\phi) & >> \frac{1}{2}\dot{\phi}^2 & \mathcal{V}'(\phi) & >> \ddot{\phi}
+\end{align}
+the second constraint was obtained from the first condition. Applying the above approximation to the field equations
+\begin{equation}
+  \left(\frac{\mathcal{V}'}{\mathcal{V}}\right)\left(\frac{3A_1}{2C\dot{\phi}^2} -1 \right)= 0
+\end{equation}
+from here we have to type of solutions, the first one requires that the potential energy term $\mathcal{V}(\phi)$ must be a constant. The second
+type of solution requires that the scalar field its a linear function of time (just like in the affine reduced case), in this context, the scalar field its explicitly determined
+as a function of time, whereas the potential energy term remains undetermined. 
+
+We could try to solve the parallel equations by considering another well-known approximation, in FRW coupled with a scalar field, in order to ensure
+to have an exponential growth of the scale factor, the hubble parameter must be a constant. In our affine formulation, this approximation its translate to demanding
+that the affine function $h(t) = h_0$ must be a constant. This type of approuch lead to a system of differential equations that can be solved and additionally,
+in this solution the Ricci tensor it is not covariantly constant, however it is degenerate, meaning that the spatial part is trivial. 
 
 
 
