@@ -320,8 +320,8 @@ the above equation is reduced to
   \dot{\phi}(t) + \frac{3\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{\mathcal{V}'(\phi)}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
 At this point we can proceed as one usually does in classical cosmology, given a potential you find the scale factor and the scalar field, whereas 
-here given a potential, you only need to determined the scalar field. The most well known potentials are the \textit{Power-Law potential} and 
-\textit{Starobinsky potential}.
+here given a potential, you only need to determined the scalar field. The most well known potentials are the \textit{Power-Law potential}
+\textit{Starobinsky potential}, and the \textit{Intermediate Inflation}
 
 Taking first the \textit{Power-Law potential} meaning $\mathcal{V}(\phi) = \beta \phi^n(t)$, then the above equation leads as
 \begin{equation}
@@ -338,6 +338,16 @@ the form of
   \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{1}{\left(1 - e^{-\beta\phi}\right)}\right) = 0
 \end{equation}
 which can be solved analytically in terms of the inverse hypergeometric functions.
+
+Then we take \textit{Intermediate inflation} written as $\mathcal{V}(\phi) =  \alpha e^{4\left(1-\frac{1}{f}\right)}$, the equation takes
+the form of
+\begin{equation}
+  \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{\alpha \left(4\left(1 - \frac{1}{f}\right)\right) e^{-1 + 4\left(1-\frac{1}{f}\right)}}{\alpha e^{4\left(1-\frac{1}{f}\right)}}\right) = 0
+\end{equation}
+which can be solved analytically in 
+\begin{equation}
+  \phi(t) = \pm \sqrt{\frac{2fC\phi_0 + 24(f-1)\ln(\cosh(t\sqrt{A_1}))}{fC}}
+\end{equation}
 
 Notice that for the above well-known potential in the cosmology literature, in our formulation it is a condition that $\kappa \neq 0$ in order
 to have non-trivial field equation, whereas in FRW coupled with a scalar field, its a constraint that $\kappa = 0$, these is a strong difference
