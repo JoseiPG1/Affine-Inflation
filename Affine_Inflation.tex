@@ -397,7 +397,7 @@ happens with the $\kappa$ factor in FRW coupled with a scalarfield.
 One could go even further and try to use the \textit{slow-roll} conditions, meaning that the kinetic energy of the scalar field its 
 neglectable with respect to the potential energy
 \begin{align}
-  \mathcal{V}(\phi) & >> \frac{1}{2}\dot{\phi}^2 & \mathcal{V}'(\phi) & >> \ddot{\phi}
+  \mathcal{V}(\phi) & \gg  \frac{1}{2}\dot{\phi}^2 & \mathcal{V}'(\phi) & \gg \ddot{\phi}
 \end{align}
 the second constraint was obtained from the first condition. Applying the above approximation to the field equations
 \begin{equation}
@@ -410,8 +410,22 @@ as a function of time, whereas the potential energy term remains undetermined.
 We could try to solve the parallel equations by considering another well-known approximation, in FRW coupled with a scalar field, in order to ensure
 to have an exponential growth of the scale factor, the hubble parameter must be a constant. In our affine formulation, this approximation its translate to demanding
 that the affine function $h(t) = h_0$ must be a constant. Then given a potential $\mathcal{V}(\phi)$ like a power-law type, the system can be solved analitically. Additionally, the covariant 
-derivative of the Ricci tensor does not vanishes completely, however, the spatial part of the Ricci tensor vanishes, meaning that its degenerate.
+derivative of the Ricci tensor does not vanishes completely, however, the spatial part of the Ricci tensor vanishes, meaning that its degenerate. 
 
+Another way to solve the equations, is by taking the slow-roll approximation first and then give the potential energy.
+\begin{align}
+  0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
+  \left(h^{2} + \dot{h}\right) \\
+  0 & = Cg\dot{\phi}^2 + 2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} \\
+  0 & = \left(2gh^2 + 4\kappa h +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + 2\kappa + \dot{g}\right)\mathcal{V}'\dot{\phi}
+\end{align}
+Using the slow-roll approximation and working for the case where the potential energy term is given by a \textit{Power-Law} in a flat space-time the field equations are 
+reduced to
+\begin{align}
+  0 & = -2h\dot{h} - \ddot{h} + \frac{\dot{\phi}^2}{\phi}n\left(h^2 + \dot{h}\right) \\
+  0 & = g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) - h\dot{g}\\
+  0 & = h\left(2gh + \dot{g}\right) - g\dot{h} + \frac{\dot{\phi}^2}{\phi}n\left(gh + \dot{g}\right) - \ddot{g}
+\end{align}
 
 
 \section{Conclusions}
