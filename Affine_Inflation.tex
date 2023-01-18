@@ -168,18 +168,17 @@ connection $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ is
       \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
       \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
 \end{align}
-  
-the traceless part of the torsion tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
-  \begin{align*}
-      \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
-      \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
-      \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
-  \end{align*}
-  
+Since we are going to be working in the torsio-free sector, in principle there is no neccesity to compute the ansatz for the torsion tensor, however, just
+for the sake of completness, we are going to include them. The traceless part of the torsion tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
+\begin{align*}
+    \mathcal{B}_{\theta}{ }^{r}{ }_{\varphi} & = \psi (t) r^2\sin\theta \sqrt{1 - \kappa r^2} &
+    \mathcal{B}_{r}{}^{\theta}{}_{\varphi} & =\frac{\psi (t) \sin \theta}{\sqrt{1 - \kappa r^2}} \\
+    \mathcal{B}_{r}{}^{\varphi}{}_{\theta} & =\frac{\psi(t)}{ \sqrt{1-\kappa r^{2}} \sin \theta}
+\end{align*}
 and finally, the vectorial torsion tensor $\mathcal{A}_\mu$ is given by
-  \begin{align}
-      \mathcal{A}_{t} = \eta(t)
-  \end{align}
+\begin{align}
+    \mathcal{A}_{t} = \eta(t)
+\end{align}
 
 Since, we have the tensor $g_{\mu\nu}$ presented as a particular solution to the field equation. Thus, we need to provied
 an ansatz for this tensor compatible with the symmetries of the cosmological principle
@@ -200,26 +199,20 @@ is where the $g_{\mu\nu}$ object exist.
 
 The field equations are obtained using Kiwosjki's formalism and taking into account the symmetries and properties of the fundamental fields, we 
 vary the action with respect to the fundamental fields. In the torsion-free limit, the field equation is
-
 \begin{equation}
   \nabla_\mu \biggl[\frac{1}{\mathcal{V}(\phi)} \left(C \partial_\alpha \phi \partial_\lambda \phi - \mathcal{R}_{\alpha\lambda}\right)\mathrm{d}V^{\mu\nu\rho\alpha}\biggr] 
   + \frac{2}{3}\nabla_\mu \biggl[ \frac{1}{\mathcal{V}(\phi)}\mathcal{R}_{\alpha\theta} \delta^{[\nu}_{\lambda}\mathrm{d}V^{\rho]\alpha\mu\theta} \biggr] = 0
 \end{equation}
-
 By multiplying the left hand side of the field equation by $\epsilon_{\nu\rho\tau\beta}$, the second term vanishes completly and the field 
 equation is reduced even further to
-
 \begin{equation}
   \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
   - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
-
 A particular solution to the above equation is
-
 \begin{equation}
   \mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi = \Lambda \mathcal{V}(\phi) g_{\mu\nu}
 \end{equation}
-
 which can be written as
 \begin{equation}
   \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
@@ -239,8 +232,9 @@ From the field equation obtained by varying the action, we distinguish two famil
   \frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)} & = \Lambda g_{\mu\nu} & 
   C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) & = 0
 \end{align}
-where the Klein-Gordon field equation emerge naturally from the parallelism constraint. The second type of solution its given by
-\textit{Harmonic field equation} which is coupled with a kinetic term and potential energy
+where the Klein-Gordon field equation emerge naturally from the parallelism constraint. 
+
+The second type of solution its given by \textit{Harmonic field equation} which is coupled with a kinetic term and potential energy
 \begin{equation}
   \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
   - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
@@ -430,4 +424,58 @@ reduced to
 
 \section{Conclusions}
 
+
+\section{Appendix A: Dimensional Analysis}
+
+In order to build the most general action while preserving the invariance under diffeormophism, we perform a \textit{dimensional analysis} technique. First,
+we define an operator $\mathcal{N}$ to count the number of free index  and a second operator $\mathcal{W}$ to define the weight density of the object. Applying both
+operators to the fundamental fields leads to
+\begin{align}
+  \mathcal{N}(\mathcal{A}_\mu)& = -1 & \mathcal{N}(\mathcal{B}_{\mu}{}^{\lambda}{}_{\nu})& = -1 & \mathcal{N}(\Gamma_{\mu}{}^{\lambda}{}_{\nu})& = -1 & \mathrm{d}V^{\alpha\beta\gamma\delta}& = 4 \\
+  \mathcal{W}(\mathcal{A}_\mu)& = 0 & \mathcal{W}(\mathcal{B}_{\mu}{}^{\lambda}{}_{\nu})& = 0 & \mathcal{W}(\Gamma_{\mu}{}^{\lambda}{}_{\nu})& = 0 & \mathrm{d}V^{\alpha\beta\gamma\delta}& = 1 
+\end{align}
+A generic term will have the following form
+\begin{equation}
+  \mathcal{O} = \mathcal{A}^m\mathcal{B}^n\Gamma^p\mathrm{d}V^q
+\end{equation}
+Applying the operators defined above, yield the equations
+\begin{align}
+  \mathcal{N}(\mathcal{O}) & = 4q - m - n - p & \mathcal{W}(\mathcal{O}) & = q 
+\end{align}
+Notice that we are interested in building scalar densities, meaning that the number of free index must be zero and the weight density must be equal to the unity. Therefore,
+we have two constraints
+\begin{align}
+  m + n + p & = 4 & q & = 1
+\end{align}
+The terms contributing to the action are shown in the below table
+\begin{table}[h]
+\begin{center}
+  \begin{tabular}{ | p{1cm} | p{1cm} | p{1cm} | p{3.5cm} | p{2cm} |}
+  \hline
+  $\mathcal{A}^m$ & $\mathcal{B}^n$ & $\Gamma^p$ & Type of configuration & Action term\\ \hline
+  4 & 0 & 0 & $\mathcal{A}\mathcal{A}\mathcal{A}\mathcal{A}$ & 0 \\
+  3 & 1 & 0 & $\mathcal{A}\mathcal{A}\mathcal{A}\mathcal{B}$ & 0 \\
+  3 & 0 & 1 & $\mathcal{A}\mathcal{A}\mathcal{A}\nabla$ & 0  \\
+  2 & 2 & 0 & $\mathcal{A}\mathcal{A}\mathcal{B}\mathcal{B}$ & $F_4$ \\
+  2 & 1 & 1 & $\mathcal{A}\mathcal{A}\mathcal{B}\nabla$ & $D_6,D_7$ \\
+  2 & 0 & 2 & $\mathcal{A}\mathcal{A}\nabla\nabla $ & 0    \\
+  1 & 3 & 0 & $\mathcal{A}\mathcal{B}\mathcal{B}\mathcal{B}$ & $F_3$ \\
+  1 & 2 & 1 & $\mathcal{A}\mathcal{B}\mathcal{B}\nabla$ & $D_4,D_5$ \\
+  1 & 1 & 2 & $\mathcal{A}\mathcal{B}\nabla\nabla$ & $ B_3,B_4,B_5,E_2$\\
+  1 & 0 & 3 & $\mathcal{A}\nabla\nabla\nabla$ & 0  \\
+  0 & 4 & 0 & $\mathcal{B}\mathcal{B}\mathcal{B}\mathcal{B}$ & $F_1,F_2$ \\
+  0 & 3 & 1 & $\mathcal{B}\mathcal{B}\mathcal{B}\nabla$ & $D_1,D_2,D_3$\\
+  0 & 2 & 2 & $\mathcal{B}\mathcal{B}\nabla\nabla$ & $B_1,B_2,E_1$ \\
+  0 & 1 & 3 & $\mathcal{B}\nabla\nabla\nabla$ & $C_1,C_2$ \\
+  0 & 0 & 4 & $\nabla\nabla\nabla\nabla$ & 0\\ \hline
+  \end{tabular}
+  \caption{Possible terms contributing to the action of Polynomial Affine gravity}
+\end{center}
+\end{table}
+
+From the above table, one use the symmetries of the tensor to see which terms will have non trivial contribution to the action. For example, the term with
+four $\mathcal{A}$ does not contribute to the action since its contraction with the volume element is identically zero. Whenever two covariant
+derivatives are contracted with the volume form they give a curvature tensor, and since the curvature is defined for the symmetric part of the connection, such 
+curvature satisfy the torsion-free Bianchi identities, which relate some of the several possible contractions of the indices. An  additional argument that 
+helps to drop contraction of indices is that $\mathcal{B}$ is traceless.
 \end{document}

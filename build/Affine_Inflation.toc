@@ -7,3 +7,4 @@
 \contentsline {subsection}{\numberline {3.1}Reduced equations}{5}{}%
 \contentsline {subsection}{\numberline {3.2}Harmonic equations}{5}{}%
 \contentsline {section}{\numberline {4}Conclusions}{7}{}%
+\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{7}{}%
