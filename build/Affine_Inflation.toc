@@ -1,10 +1,12 @@
 \contentsline {section}{\numberline {1}Introduction}{1}{}%
-\contentsline {section}{\numberline {2}Polynomial Affine Gravity}{1}{}%
+\contentsline {section}{\numberline {2}Polynomial Affine Gravity}{2}{}%
 \contentsline {subsection}{\numberline {2.1}The action}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Cosmological ansatz}{3}{}%
-\contentsline {subsection}{\numberline {2.3}The field equations}{3}{}%
+\contentsline {subsection}{\numberline {2.3}The field equations}{4}{}%
 \contentsline {section}{\numberline {3}Cosmological Solutions}{4}{}%
 \contentsline {subsection}{\numberline {3.1}Reduced equations}{5}{}%
 \contentsline {subsection}{\numberline {3.2}Harmonic equations}{5}{}%
-\contentsline {section}{\numberline {4}Conclusions}{7}{}%
-\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{7}{}%
+\contentsline {section}{\numberline {4}Conclusions}{8}{}%
+\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{8}{}%
+\contentsline {subsection}{\numberline {5.1}Building the action}{8}{}%
+\contentsline {subsection}{\numberline {5.2}Coupling the scalar field $\phi $}{9}{}%

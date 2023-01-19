@@ -427,6 +427,11 @@ reduced to
 
 \section{Appendix A: Dimensional Analysis}
 
+In this section we briefly show how to build the action and coupling the scalar field in the absence of the metric tensor, by using a sort of
+\textit{dimensional analysis} technique.
+
+\subsection{Building the action}
+
 In order to build the most general action while preserving the invariance under diffeormophism, we perform a \textit{dimensional analysis} technique. First,
 we define an operator $\mathcal{N}$ to count the number of free index  and a second operator $\mathcal{W}$ to define the weight density of the object. Applying both
 operators to the fundamental fields leads to
@@ -478,4 +483,29 @@ four $\mathcal{A}$ does not contribute to the action since its contraction with 
 derivatives are contracted with the volume form they give a curvature tensor, and since the curvature is defined for the symmetric part of the connection, such 
 curvature satisfy the torsion-free Bianchi identities, which relate some of the several possible contractions of the indices. An  additional argument that 
 helps to drop contraction of indices is that $\mathcal{B}$ is traceless.
+
+\subsection{Coupling the scalar field $\phi$}
+
+In order to form the kinetic term without the metric tensor we proceed just like the subsection before, however, here we are interested in building
+tensor densities of the type $(0,2)$, and additionally we require that it has to be symmetric. Then, the constraint equations are
+\begin{align}
+  m + n + p & = 2 & q & = 1
+\end{align}
+From here we present the table with all possible configuration
+\begin{table}[h]
+  \begin{center}
+    \begin{tabular}{ | p{1cm} | p{1cm} | p{1cm} | p{3.5cm} | p{2cm} |}
+    \hline
+    $\mathcal{A}^m$ & $\mathcal{B}^n$ & $\Gamma^p$ & Type of configuration & Action term\\ \hline
+    2 & 0 & 0 & $\mathcal{A}\mathcal{A}$ &  \\
+    1 & 1 & 0 & $\mathcal{A}\mathcal{B}$ &  \\
+    1 & 0 & 1 & $\mathcal{A}\nabla$ &   \\
+    0 & 2 & 0 & $\mathcal{B}\mathcal{B}$ &  \\
+    0 & 1 & 1 & $\mathcal{B}\nabla$ &  \\
+    0 & 0 & 2 & $\nabla\nabla $ &     \\ \hline
+    \end{tabular}
+    \caption{Possible terms to contract the kinetic term of the scalar field $\phi$}
+  \end{center}
+  \end{table}
+
 \end{document}
