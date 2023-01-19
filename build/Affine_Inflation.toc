@@ -2,12 +2,11 @@
 \contentsline {section}{\numberline {2}Polynomial Affine Gravity}{2}{}%
 \contentsline {subsection}{\numberline {2.1}The action}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Cosmological ansatz}{3}{}%
-\contentsline {subsection}{\numberline {2.3}The field equations}{4}{}%
+\contentsline {subsection}{\numberline {2.3}The field equations}{3}{}%
 \contentsline {section}{\numberline {3}Cosmological Solutions}{4}{}%
-\contentsline {subsection}{\numberline {3.1}Reduced equations}{5}{}%
-\contentsline {subsection}{\numberline {3.2}Harmonic equations}{5}{}%
-\contentsline {section}{\numberline {4}Conclusions}{8}{}%
-\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{8}{}%
-\contentsline {subsection}{\numberline {5.1}Building the action}{8}{}%
-\contentsline {subsection}{\numberline {5.2}Coupling the scalar field $\phi $}{9}{}%
-\contentsline {section}{\numberline {6}GR as a subspace of PAG}{9}{}%
+\contentsline {subsection}{\numberline {3.1}Harmonic equations}{4}{}%
+\contentsline {section}{\numberline {4}Conclusions}{6}{}%
+\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{6}{}%
+\contentsline {subsection}{\numberline {5.1}Building the action}{7}{}%
+\contentsline {subsection}{\numberline {5.2}Coupling the scalar field $\phi $}{7}{}%
+\contentsline {section}{\numberline {6}Appendix B: GR as a subspace of PAG}{8}{}%

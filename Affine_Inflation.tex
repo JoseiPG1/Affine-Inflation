@@ -180,21 +180,6 @@ and finally, the vectorial torsion tensor $\mathcal{A}_\mu$ is given by
     \mathcal{A}_{t} = \eta(t)
 \end{align}
 
-Since, we have the tensor $g_{\mu\nu}$ presented as a particular solution to the field equation. Thus, we need to provied
-an ansatz for this tensor compatible with the symmetries of the cosmological principle
-\begin{equation}
-  g_{\mu\nu} = b(t)\mathrm{d}t^2 + a(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
-  + r^2 \sin^2 \theta \mathrm{d} \varphi^2 \right)
-\end{equation}
-
-Additionally, its required that the covariant derivative of the object $g_{\mu\nu}$ must vanishes completly, from which we found that
-\begin{align}
-  b(t) & = -b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = \frac{\dot{a}(t)a(t)}{b_0}
-\end{align}
-It is important to remark to the above definitions will only have an effect on the parallel field equation, which 
-is where the $g_{\mu\nu}$ object exist.
-
-
 \subsection{The field equations}
 
 The field equations are obtained using Kiwosjki's formalism and taking into account the symmetries and properties of the fundamental fields, we 
@@ -209,37 +194,7 @@ equation is reduced even further to
   \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
   - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
 \end{equation}
-A particular solution to the above equation is
-\begin{equation}
-  \mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi = \Lambda \mathcal{V}(\phi) g_{\mu\nu}
-\end{equation}
-which can be written as
-\begin{equation}
-  \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
-  C\left(\partial_\mu \phi \partial_\nu \phi - \frac{1}{2}g_{\mu\nu} (\partial \phi)^2\right)
-\end{equation}
-Taking the divergence $\nabla^\mu$ of the above equation leads to
-\begin{equation}
-  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
-\end{equation}
-This is the Klein-Gordon field equation which requires the existence of the $g_{\mu\nu}$ object, to define the 
-d'Alembert operator. Without this object, it is not possible to obtain a Klein-Gordon field equation, 
-and additionally we require that the integration constant $\Lambda \neq 0$.
-
-From the field equation obtained by varying the action, we distinguish two families of solutions, the first one being the
-\textit{Reduced field equation} couple with the Klein-Gordon field equation
-\begin{align}
-  \frac{\mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi}{\mathcal{V}(\phi)} & = \Lambda g_{\mu\nu} & 
-  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) & = 0
-\end{align}
-where the Klein-Gordon field equation emerge naturally from the parallelism constraint. 
-
-The second type of solution its given by \textit{Harmonic field equation} which is coupled with a kinetic term and potential energy
-\begin{equation}
-  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
-  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
-\end{equation}
-
+This is the field equation in Polynomial Affine Graivity coupled with a scalar field in the torsion-free sector.
 
 
 
@@ -267,24 +222,6 @@ Here we have an \textit{affine scale factor} given by
 \begin{equation}
   a_f(t) = 3\kappa \cosh^2(t\sqrt{A_1})
 \end{equation}
-
-\subsection{Reduced equations}
-
-Under the cosmological ansatz the field equation for the geometric part is written as follow
-\begin{align}
-  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) - \Lambda b_0 a(t)\mathcal{V}(\phi) \\
-  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) + 2b_0\kappa - \Lambda b_0 a^2(t)\mathcal{V}(\phi)
-  \end{align}
-Combining the two equations we obtained
-\begin{equation}
-  3H^2(t) = \Lambda b_0 \mathcal{V}(\phi) -\frac{1}{2}C \dot{\phi}^2(t) - \frac{3b_0\kappa}{a^2(t)}
-\end{equation}
-where the first function is the Hubble function $H(t)$. Notice that for $\kappa = 0$ we recover the classical Friedmann equation. Additionally,
-the field equation for the scalar is given by
-\begin{equation}
-  \ddot{\phi}(t) + 3h(t)\dot{\phi}(t) + \Lambda b_0 \mathcal{V}'(\phi) = 0
-\end{equation}
-We are able to recover Einstein-Hillbert coupled with a scalar field, therefore, there is no new information in this type of solution.
 
 
 \subsection{Harmonic equations}
@@ -540,6 +477,73 @@ the las type
 \end{equation*}
 both terms are trivial through Bianchi's identity and the antisymmetry of the volumen element. 
 
-\section{GR as a subspace of PAG}
+\section{Appendix B: GR as a subspace of PAG}
+
+The field equation is given by
+\begin{equation}
+  \nabla_{[\mu}\left(\mathcal{R}_{\nu]\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{[\mu}\left(\partial_{\nu]} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = 0
+\end{equation}
+A particular solution of the above field equation is given by
+\begin{equation}
+  \nabla_{\mu}\left(\mathcal{R}_{\nu\gamma}\frac{1}{\mathcal{V}(\phi)}\right) 
+  - C \nabla_{\mu}\left(\partial_{\nu} \phi \partial_\gamma \phi \frac{1}{\mathcal{V}(\phi)}\right) = \nabla_\mu \left(\Lambda g_{\nu\gamma}\right)
+\end{equation}
+Notice that in order to be consistent, the object $g_{\mu\nu}$ must be symmetric, so taking the antysymmetrize covariant derivative it vanishes completely, 
+allowing us to recover the field equation. This gives rise a metric tensor named $g_{\mu\nu}$. Next, a particular solution of the above equation is
+\begin{equation}
+  \mathcal{R}_{\mu\nu} - C\partial_\mu \phi \partial_\nu \phi = \Lambda \mathcal{V}(\phi) g_{\mu\nu}
+\end{equation}
+and by using the metric tensor, the above equation can be rewritten in a more well-known equation 
+\begin{equation}
+  \mathcal{R}_{\mu\nu} - \frac{1}{2}\mathcal{R}g_{\mu\nu} + \Lambda \mathcal{V}(\phi) g_{\mu\nu} = 
+  C\left(\partial_\mu \phi \partial_\nu \phi - \frac{1}{2}g_{\mu\nu} (\partial \phi)^2\right)
+\end{equation}
+
+If we vary the action with respect to the scalar field and take the torsion-free limit, then we will have a trivial contribution, however, we can still
+have the field equation for the scalar field by proceeding in a different manner. Taking the divergence $\nabla^\mu$ of the above equation leads to
+\begin{equation}
+  \Lambda g_{\mu\nu}\nabla^{\mu}\mathcal{V}(\phi) =C \left(\nabla^{\mu}\partial_\mu \phi \partial_\nu \phi + \partial_\mu \phi \nabla^{\mu}\partial_\nu \phi
+  - g_{\mu\nu} \partial \phi \nabla^{\mu}\partial \phi \right)
+\end{equation}
+after some simplification, the above equation leads to
+\begin{equation}
+  C \nabla^\mu \nabla_\mu \phi - \Lambda \mathcal{V}'(\phi) = 0
+\end{equation}
+which is the Klein-Gordon field equation. Notice that in order to obtain the above equation we require the existence of the $g_{\mu\nu}$ object, to define the 
+d'Alembert operator. Without this object, it is not possible to obtain a Klein-Gordon field equation, additionally we require that the integration 
+constant $\Lambda \neq 0$ and also we demand that the covariant derivative of $g_{\mu\nu}$ vanishes
+completely, to satisfy the metricity condition.
+
+
+Since, we have the tensor $g_{\mu\nu}$ presented as a particular solution to the field equation. Thus, we need to provied
+an ansatz for this tensor compatible with the symmetries of the cosmological principle. This is donde by computing the Lie derivative of an 
+arbitrary tensor type $(0,2)$ along the Killing vectors that generate the symmetries of rotation and translations. This compute leads to 
+\begin{equation}
+  g_{\mu\nu} = b(t)\mathrm{d}t^2 + a(t)\left(\frac{1}{1 - \kappa r^2} \mathrm{d}r^2 + r^2 \mathrm{d}\theta^2 
+  + r^2 \sin^2 \theta \mathrm{d} \varphi^2 \right)
+\end{equation}
+Demanding that its covariant derivative vaniahes, we found restriction for the above functions in terms of the connection coefficients
+\begin{align}
+  b(t) & = -b_0 & h(t) & = \frac{\dot{a}(t)}{a(t)} & g(t) & = \frac{\dot{a}(t)a(t)}{b_0}
+\end{align}
+
+Replacing the cosmological ansatz for $g$ and $\Gamma$ in the field equation yields to
+\begin{align}
+  0 & = 3\ddot{a}(t) + C a(t)\dot{\phi}^{2}(t) - \Lambda b_0 a(t)\mathcal{V}(\phi) \\
+  0 & = \ddot{a}(t)a(t) + 2\dot{a}^2(t) + 2b_0\kappa - \Lambda b_0 a^2(t)\mathcal{V}(\phi)
+  \end{align}
+Combining the two equations we obtained we get
+\begin{equation}
+  3H^2(t) = \Lambda b_0 \mathcal{V}(\phi) -\frac{1}{2}C \dot{\phi}^2(t) - \frac{3b_0\kappa}{a^2(t)}
+\end{equation}
+where the first function is the Hubble function $H(t)$, here we are able to recover the FRW field equation coupled with a scalar field. Additionally,
+the field equation for the scalar is given by the Klein-Gordon field equation, replacing the cosmological ansatz leads to
+\begin{equation}
+  \ddot{\phi}(t) + 3H(t)\dot{\phi}(t) + \Lambda b_0 \mathcal{V}'(\phi) = 0
+\end{equation}
+Thus we are able to recover Einstein-Hillbert coupled with a scalar field.
+
+
 
 \end{document}
