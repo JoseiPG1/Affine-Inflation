@@ -494,18 +494,52 @@ tensor densities of the type $(0,2)$, and additionally we require that it has to
 From here we present the table with all possible configuration
 \begin{table}[h]
   \begin{center}
-    \begin{tabular}{ | p{1cm} | p{1cm} | p{1cm} | p{3.5cm} | p{2cm} |}
+    \begin{tabular}{ | p{1cm} | p{1cm} | p{1cm} | p{3.5cm} |}
     \hline
-    $\mathcal{A}^m$ & $\mathcal{B}^n$ & $\Gamma^p$ & Type of configuration & Action term\\ \hline
-    2 & 0 & 0 & $\mathcal{A}\mathcal{A}$ &  \\
-    1 & 1 & 0 & $\mathcal{A}\mathcal{B}$ &  \\
-    1 & 0 & 1 & $\mathcal{A}\nabla$ &   \\
-    0 & 2 & 0 & $\mathcal{B}\mathcal{B}$ &  \\
-    0 & 1 & 1 & $\mathcal{B}\nabla$ &  \\
-    0 & 0 & 2 & $\nabla\nabla $ &     \\ \hline
+    $\mathcal{A}^m$ & $\mathcal{B}^n$ & $\Gamma^p$ & Type of configuration \\ \hline
+    2 & 0 & 0 & $\mathcal{A}\mathcal{A}$  \\
+    1 & 1 & 0 & $\mathcal{A}\mathcal{B}$  \\
+    1 & 0 & 1 & $\mathcal{A}\nabla$    \\
+    0 & 2 & 0 & $\mathcal{B}\mathcal{B}$  \\
+    0 & 1 & 1 & $\mathcal{B}\nabla$   \\
+    0 & 0 & 2 & $\nabla\nabla $     \\ \hline
     \end{tabular}
     \caption{Possible terms to contract the kinetic term of the scalar field $\phi$}
   \end{center}
   \end{table}
+The first type of term, can only be configurate in one form where two vectorial torsion $\mathcal{A}$ must be contracted with the volumen element
+\begin{equation*}
+    \mathcal{A}_\alpha\mathcal{A}_\beta\mathrm{d}V^{\alpha\beta\mu\nu} 
+\end{equation*}
+meaning that its contributio vanishes completely. The second type, produces only two possible terms
+\begin{equation*}
+    \mathcal{A}_\sigma\mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathrm{d}V^{\alpha\beta\mu\nu} + 
+    \mathcal{A}_\alpha\mathcal{B}_{\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu}
+\end{equation*} 
+The first term can not be used because it is an antisymmetric object, therefore its coupling with the kinetic term of the scalar field
+wil vanishes completely, whereas the second produce non trivial contribution. The thir type term has only one contribution
+\begin{equation*}
+  \nabla_\alpha \mathcal{A}_\beta\mathrm{d}V^{\alpha\beta\mu\nu}
+\end{equation*}
+which is trivial. The fourth type has two possible configuration
+\begin{equation*}
+  \mathcal{B}_{\alpha}{}^{\mu}{}_{\beta}\mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}\mathrm{d}V^{\alpha\beta\gamma\delta} + 
+  \mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathcal{B}_{\sigma}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} 
+\end{equation*}
+Here both term have non trivial contribution, however, since we are going to be dealing with the torsion-free sector, both term will no have
+an effective action on the field equaitons. The fith configuration has two possible terms
+\begin{equation*}
+  \nabla_\alpha \mathcal{B}_{\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} + 
+  \nabla_\sigma \mathcal{B}_{\alpha}{}^{\sigma}{}_{\beta}\mathrm{d}V^{\alpha\beta\mu\nu}
+\end{equation*}
+Notice that second term will produce a trivial term since its antisymmetric in its two free indices, whereas the first term have a non trivial contribution. Finally,
+the las type
+\begin{equation*}
+  \mathcal{R}_{\alpha\beta}{}^{\mu}{}_{\gamma}\mathrm{d}V^{\alpha\beta\gamma\nu} + 
+  \mathcal{R}_{\alpha\beta}{}^{\sigma}{}_{\sigma}\mathrm{d}V^{\alpha\beta\mu\nu}
+\end{equation*}
+both terms are trivial through Bianchi's identity and the antisymmetry of the volumen element. 
+
+\section{GR as a subspace of PAG}
 
 \end{document}
