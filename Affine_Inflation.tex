@@ -219,25 +219,6 @@ From here, we distinguish three types of solutions
   \mathcal{S}_{\mu\nu} & = 0 & \nabla_{\eta} \mathcal{S}_{\mu\nu} & = 0 & \nabla_{[\eta} \mathcal{S}_{\mu]\nu} & = 0
 \end{align}
 
-Notice that up to this point we have not use any metric tensor in our formulation and field equations, however, we still have an emergent metric 
-tensor coming from the Ricci tensor. When the Ricci tensor $\mathcal{R}_{\mu\nu}$ its symmetric and no degenerate, it serves as a metric tensor.
-\begin{align}
-  \mathcal{R}_{tt} & = -3\left(\dot{h} + h^2\right) & \mathcal{R}_{rr} & = \frac{\dot{g} + gh + 2\kappa}{1 - \kappa r^2}
-\end{align}
-Notice that the expression $\dot{g} + gh + 2\kappa$ its the affine analogue to the well-known scale factor $a(t)$ in the FRW universe. As 
-one does in \textit{General Relativity}, demanding that its covariant derivative must vanishes completly, we are able 
-to completely define the affine functions of the symmetric part of the connection
-\begin{align}
-  h(t) & = \sqrt{A_1}\tanh\left(t\sqrt{A_1}\right) & g(t) & = \frac{\kappa \sinh\left(2t\sqrt{A_1}\right) }{2\sqrt{A_1}}
-\end{align}
-The above definitions ensures that $\nabla_\alpha \mathcal{R}_{\beta\gamma} = 0$, this asservs the metricity condition. Then, the Ricci tensor
-is written as
-\begin{align}
-  \mathcal{R}_{tt} & = -3A_1 & \mathcal{R}_{rr} & =  \frac{3\kappa \cosh^2(t\sqrt{A_1})}{1 - \kappa r^2}
-\end{align}
-If we require that the Ricci tensor acts as a metric tensor and we demand that its covariantly constant, then 
-the only unknown functions are the scalar field $\phi$ and its potential energy term $\mathcal{V}(\phi)$.
-
 \subsection{$\mathcal{S}_{\mu\nu} = 0 $}
 
 In the case where the symmetric tensor $\mathcal{S}_{\mu\nu}$ vanishes completely we are left with two differential equations
@@ -250,73 +231,17 @@ can do is to solve the scalar field $\phi(t)$ in terms of the time derivative of
   \phi(t) & = \phi_0 \pm \int \mathrm{d}t \sqrt{\frac{\dot{h} + h^2}{-C}} & 
   g(t) & = e^{- \int \mathrm{d}t \, h} \left( g_0 - 2 \kappa \int \mathrm{d}t \, e^{\int \mathrm{d}t \, h} \right)
 \end{align}
-However, if we impose that the Ricci tensor is covariantly constant, the above equation is reduced to
-\begin{align}
-  C\dot{\phi}^2(t) + A_1 & = 0 & 3\kappa \cosh(t\sqrt{A_1}) & = 0
-\end{align}
-from the second equation its clear to see that $\kappa = 0$, and from the first equation we can determined the scalar field
-\begin{equation}
-  \phi(t) = \pm\sqrt{-\frac{A_1}{C}}t + \phi_0
-\end{equation}
 
 
 \subsection{$\nabla_{\eta} \mathcal{S}_{\mu\nu} = 0 $}
 
-The second case its the affine parallel scenario. Here we have three equations
+The second case its the affine parallel scenario, where the covariant derivative of the $\mathcal{S}_{\mu\nu}$ vanishes completely
 \begin{align}
   0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
   \left(h^{2} + \dot{h}\right) \\
   0 & = Cg\dot{\phi}^2 + 2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} \\
   0 & = \left(2gh^2 + 4\kappa h +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + 2\kappa + \dot{g}\right)\mathcal{V}'\dot{\phi}
 \end{align}
-Demanding that the Ricci tensor covariant derivative vanishes, the equations reduced to
-\begin{align}
-  0 & = C\mathcal{V}'\dot{\phi}^3 - 2C\mathcal{V}\dot{\phi}\ddot{\phi} + 3A_1 \mathcal{V}'\dot{\phi}\\
-  0 & = C\kappa \cosh(t\sqrt{A_1})\sinh(t\sqrt{A_1})\dot{\phi} \\
-  0 & = \kappa \cosh(t\sqrt{A_1})\mathcal{V}'\dot{\phi}
-\end{align}
-the last two equations can be solve simultaneously by fixing $\kappa = 0$, additionally, the first equation can be rewritten as
-\begin{equation}
-  \ddot{\phi} - \frac{1}{2}\dot{\phi}^2\left(\frac{\mathcal{V}'}{\mathcal{V}}\right) + \frac{3A_1}{2C}\left(\frac{\mathcal{V}'}{\mathcal{V}}\right) = 0
-\end{equation}
-Here, just like before we can give the potential energy term $\mathcal{V}(\phi)$, taking the potential \textit{Power-Law} the scalar field
-can be solved in terms of inverse hypergeometric functions, but for $n = 0 , 1 , 2$ we have an analytically expression. In the case of Starobinsky
-potential, the scalar field is written in terms of inverse hyperbolic tangent function. Notice that in this situation, we need to constraint $\kappa = 0$ to have non-trivial field equation, this, in some sense matches what
-happens with the $\kappa$ factor in FRW coupled with a scalarfield. 
-
-One could go even further and try to use the \textit{slow-roll} conditions, meaning that the kinetic energy of the scalar field its 
-neglectable with respect to the potential energy
-\begin{align}
-  \mathcal{V}(\phi) & \gg  \frac{1}{2}\dot{\phi}^2 & \mathcal{V}'(\phi) & \gg \ddot{\phi}
-\end{align}
-the second constraint was obtained from the first condition. Applying the above approximation to the field equations
-\begin{equation}
-  \left(\frac{\mathcal{V}'}{\mathcal{V}}\right)\left(\frac{3A_1}{2C\dot{\phi}^2} -1 \right)= 0
-\end{equation}
-from here we have to type of solutions, the first one requires that the potential energy term $\mathcal{V}(\phi)$ must be a constant. The second
-type of solution requires that the scalar field its a linear function of time (just like in the affine reduced case), in this context, the scalar field its explicitly determined
-as a function of time, whereas the potential energy term remains undetermined. 
-
-We could try to solve the parallel equations by considering another well-known approximation, in FRW coupled with a scalar field, in order to ensure
-to have an exponential growth of the scale factor, the hubble parameter must be a constant. In our affine formulation, this approximation its translate to demanding
-that the affine function $h(t) = h_0$ must be a constant. Then given a potential $\mathcal{V}(\phi)$ like a power-law type, the system can be solved analitically. Additionally, the covariant 
-derivative of the Ricci tensor does not vanishes completely, however, the spatial part of the Ricci tensor vanishes, meaning that its degenerate. 
-
-Another way to solve the equations, is by taking the slow-roll approximation first and then give the potential energy.
-\begin{align}
-  0 & = C\mathcal{V}'\dot{\phi}^3-2C\mathcal{V}\dot{\phi}\ddot{\phi} - 3\mathcal{V}\left(2h\dot{h} + \ddot{h}\right) + 3\mathcal{V}'\dot{\phi}
-  \left(h^{2} + \dot{h}\right) \\
-  0 & = Cg\dot{\phi}^2 + 2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} \\
-  0 & = \left(2gh^2 + 4\kappa h +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + 2\kappa + \dot{g}\right)\mathcal{V}'\dot{\phi}
-\end{align}
-Using the slow-roll approximation and working for the case where the potential energy term is given by a \textit{Power-Law} in a flat space-time the field equations are 
-reduced to
-\begin{align}
-  0 & = -2h\dot{h} - \ddot{h} + \frac{\dot{\phi}}{\phi}n\left(h^2 + \dot{h}\right) \\
-  0 & = g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) - h\dot{g}\\
-  0 & = h\left(2gh + \dot{g}\right) - g\dot{h} + \frac{\dot{\phi}}{\phi}n\left(gh + \dot{g}\right) - \ddot{g}
-\end{align}
-
 
 \subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
 
@@ -325,46 +250,6 @@ Under the symmetries of the cosmological ansatz we only have one equation
   C\mathcal{V}(\phi)g\dot{\phi}^2 + \mathcal{V}(\phi)\left(4gh^2 +2\kappa h + 2g\dot{h} - \ddot{g}\right) +
   \mathcal{V}'(\phi)\dot{\phi}\left(gh + 2\kappa + \dot{g}\right) = 0
 \end{equation}
-Since we have two unknown functions of time and the scalar field, it is not possible to solve the above equation. However, if the Ricci tensor
-it is not degenerate, then it can serve the function as a metric tensor. Therefore, demanding that is covariant derivative must be zero, 
-the above equation is reduced to
-\begin{equation} 
-  \dot{\phi}(t) + \frac{3\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{\mathcal{V}'(\phi)}{\mathcal{V}(\phi)}\right) = 0
-\end{equation}
-At this point we can proceed as one usually does in classical cosmology, given a potential you find the scale factor and the scalar field, whereas 
-here given a potential, you only need to determined the scalar field. The most well known potentials are the \textit{Power-Law potential}
-\textit{Starobinsky potential}, and the \textit{Intermediate Inflation}
-
-Taking first the \textit{Power-Law potential} meaning $\mathcal{V}(\phi) = \beta \phi^n(t)$, then the above equation leads as
-\begin{equation}
-  \dot{\phi}(t) + \frac{3\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\phi^{-1}(t)n\right) = 0
-\end{equation}
-which can be solved analytically
-\begin{equation}
-  \phi(t) = \pm \sqrt{\frac{2C\phi_0 - 6n\log(\cosh(t\sqrt{A_1}))}{C} }
-\end{equation}
-
-Then we take \textit{Starobinsky potential} written as $\mathcal{V}(\phi) =  \alpha \left(1 - e^{-\beta\phi}\right)^2$, the equation takes
-the form of
-\begin{equation}
-  \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{1}{\left(1 - e^{-\beta\phi}\right)}\right) = 0
-\end{equation}
-which can be solved analytically in terms of the inverse hypergeometric functions.
-
-Then we take \textit{Intermediate inflation} written as $\mathcal{V}(\phi) =  \alpha \phi^{4\left(1-\frac{1}{f}\right)}$, the equation takes
-the form of
-\begin{equation}
-  \dot{\phi}(t) - \frac{6\beta\sqrt{A_1}}{C}\tanh\left(t\sqrt{A_1}\right)\left(\frac{\alpha \left(4\left(1 - \frac{1}{f}\right)\right) e^{-1 + 4\left(1-\frac{1}{f}\right)}}{\alpha e^{4\left(1-\frac{1}{f}\right)}}\right) = 0
-\end{equation}
-which can be solved analytically in 
-\begin{equation}
-  \phi(t) = \pm \sqrt{\frac{2fC\phi_0 + 24(f-1)\ln(\cosh(t\sqrt{A_1}))}{fC}}
-\end{equation}
-
-Notice that for the above well-known potential in the cosmology literature, in our formulation it is a condition that $\kappa \neq 0$ in order
-to have non-trivial field equation, whereas in FRW coupled with a scalar field, its a constraint that $\kappa = 0$, these is a strong difference
-between our geometries. Additionally, while in FRW one needs to impose the \textit{slow-roll} conditions to solve the field equations, here
-in the absence of those approximation we are able to solve the field equations.
 
 \section{Conclusions}
 

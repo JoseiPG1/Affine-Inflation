@@ -5,10 +5,10 @@
 \contentsline {subsection}{\numberline {2.3}The field equations}{3}{}%
 \contentsline {section}{\numberline {3}Cosmological Solutions}{4}{}%
 \contentsline {subsection}{\numberline {3.1}$\mathcal {S}_{\mu \nu } = 0 $}{4}{}%
-\contentsline {subsection}{\numberline {3.2}$\nabla _{\eta } \mathcal {S}_{\mu \nu } = 0 $}{5}{}%
-\contentsline {subsection}{\numberline {3.3}$\nabla _{[\eta } \mathcal {S}_{\mu ]\nu } = 0 $}{6}{}%
-\contentsline {section}{\numberline {4}Conclusions}{7}{}%
-\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{7}{}%
-\contentsline {subsection}{\numberline {5.1}Building the action}{7}{}%
-\contentsline {subsection}{\numberline {5.2}Coupling the scalar field $\phi $}{8}{}%
-\contentsline {section}{\numberline {6}Appendix B: GR as a subspace of PAG}{8}{}%
+\contentsline {subsection}{\numberline {3.2}$\nabla _{\eta } \mathcal {S}_{\mu \nu } = 0 $}{4}{}%
+\contentsline {subsection}{\numberline {3.3}$\nabla _{[\eta } \mathcal {S}_{\mu ]\nu } = 0 $}{4}{}%
+\contentsline {section}{\numberline {4}Conclusions}{4}{}%
+\contentsline {section}{\numberline {5}Appendix A: Dimensional Analysis}{4}{}%
+\contentsline {subsection}{\numberline {5.1}Building the action}{5}{}%
+\contentsline {subsection}{\numberline {5.2}Coupling the scalar field $\phi $}{5}{}%
+\contentsline {section}{\numberline {6}Appendix B: GR as a subspace of PAG}{6}{}%
