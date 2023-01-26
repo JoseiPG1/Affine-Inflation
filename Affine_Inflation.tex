@@ -254,7 +254,64 @@ Under the above assumptions, the system of differential equations is reduced to
   0 & = Cg\dot{\phi}^2 + 2gh^2  - h\dot{g} + 3g\dot{h} \\
   0 & = \left(2gh^2  +h\dot{g} - g \dot{h} - \ddot{g}\right)\mathcal{V} + \left(gh + \dot{g}\right)\mathcal{V}'\dot{\phi}
 \end{align}
+In cosmology, you give a potential energy term like \textit{Power-Law} or \textit{Starobinsky} and solve the field equations for the scale factor $a(t)$
+and the scalar field $\phi(t)$. Here, we are going the give the potential energy term and solve the field equations for the affine functions
+$h(t)$ and $g(t)$ and the scalar field $\phi(t)$.
 
+First we are going to work with the \textit{Power-Law} potential $\mathcal{V}(\phi) = \beta \phi^{j}(t)$, then the equations are
+\begin{align}
+  0 & = -6h\dot{h}\phi + 3 jh^2 \dot{\phi} + 3j\dot{h}\dot{\phi} + jC\dot{\phi}^3 - 3\phi \ddot{h} \\
+  0 & = -h\dot{g} + g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) \\
+  0 & = h\left(2gh + \dot{g} - g\dot{h}\right) + \frac{j(gh + \dot{g})\dot{\phi}}{\phi} - \ddot{g}
+\end{align}
+Notice that for our symmetric connection, comparing our connection coefficients with the ones already known in the FRW universe, we can deduced that
+$h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$. Reeplacing those definitions in the system of differential equations, leads to
+\begin{align}
+  0 & = 3\phi \dot{a}\ddot{a} + a\left(jaC\dot{\phi}^3 + 3j \dot{\phi}\ddot{a} - 3\phi \dddot{a}\right) \\
+  0 & = -\frac{2\dot{a}^2}{a} + aC\dot{\phi}^2 + 2\ddot{a}\\
+  0 & = ja\dot{\phi}\left(2\dot{a}^2 + a\ddot{a}\right) + \phi\left(4\dot{a}^3 -3a\dot{a}\ddot{a} - a^2 \dddot{a}\right)
+\end{align}
+It is convenient to introduce the following variable change
+\begin{align}
+  \ddot{a} & = \dot{u}(t) & \dddot{a}(t) & = \ddot{u}(t) & \Phi(t) & = \frac{\dot{\phi}}{\phi}
+\end{align}
+In the above notation, the equations are written as
+\begin{align}
+  0 & = 3\ddot{u} + 3\dot{u}\left(-h- \Phi\right) - jaC\phi^2\Phi^3 \\
+  0 & = \frac{\dot{u}}{a} - h^2 + \frac{1}{2}C\dot{\phi}^2 \\
+  0 & = \ddot{u} + \dot{u}\left(3h - j\Phi\right) - 2ah^2\left(2h + j\Phi\right)
+\end{align}
+From the third equation, it is possible to find an expression for the scale factor
+\begin{equation}
+  a = \frac{\dot{u}\left(3h - j\Phi\right) + \ddot{u} }{2h^2\left(2h + j\Phi\right)}
+\end{equation}
+Reeplacing the above expresion for the scale factor in the first and second equation leads to
+\begin{align}
+  0 & = \ddot{u} - \dot{u}\left(\frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C}\right) \\
+  0 & = \ddot{u} - \dot{u}\left(\frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}\right)
+\end{align}
+comparing the coefficients $\dot{u}$ yields to
+\begin{equation}
+  \frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C} = (\frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}
+\end{equation}
+which after some simplification, can be reduced to
+\begin{equation}
+  h\left(2h+j\Phi\right)\left(\frac{6h}{-12h^3-6jh^2\Phi +jC\phi^2\Phi^3} + \frac{1}{2h^2 - C\dot{\phi}}\right) = 0
+\end{equation}
+notice that we have three types of solution, however the most interesting solutions its coming from solving the second differential equation by replacing
+the hubble function $h(t)$ and $\Phi(t)$
+\begin{align}
+  \frac{\dot{\phi}}{\phi} + \frac{2\dot{a}}{aj} & = 0  \to  \phi(t)  = a(t)^{-2/j}\phi_0
+\end{align}
+From here, reeplacing the scalar field $\phi(t)$ in terms of the scale factor $a(t)$ into the two differential equations leads 
+\begin{equation}
+  \ddot{u} + 5\frac{\dot{u}\dot{a}}{a} = 0
+\end{equation}
+which in terms of only the scale factors 
+\begin{equation}
+  \dddot{a}+ 5\frac{\ddot{u}\dot{a}}{a} = 0
+\end{equation}
+Notice that the complexity of the differential equations system is reduced entirely by imposing the equality of the factors.
 
 \subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
 
