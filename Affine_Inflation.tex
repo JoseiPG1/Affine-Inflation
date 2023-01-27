@@ -292,7 +292,7 @@ Reeplacing the above expresion for the scale factor in the first and second equa
 \end{align}
 comparing the coefficients $\dot{u}$ yields to
 \begin{equation}
-  \frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C} = (\frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}
+  \frac{12h^4 + 18jh^3\Phi + 6j^2h^2\Phi^2 + 3jCh\phi^2\Phi^3 - j^2\phi^2\Phi^4C}{12h^3 + 6jh^2\Phi - j\phi^2\Phi^3 C} = \frac{2h^2\left(h+3j\Phi\right)+C\left(3h - j\Phi\right)\dot{\phi}^2}{2h^2 - C\dot{\phi}^2}
 \end{equation}
 which after some simplification, can be reduced to
 \begin{equation}
@@ -309,9 +309,10 @@ From here, reeplacing the scalar field $\phi(t)$ in terms of the scale factor $a
 \end{equation}
 which in terms of only the scale factors 
 \begin{equation}
-  \dddot{a}+ 5\frac{\ddot{u}\dot{a}}{a} = 0
+  \dddot{a}+ 5\frac{\ddot{a}\dot{a}}{a} = 0
 \end{equation}
-Notice that the complexity of the differential equations system is reduced entirely by imposing the equality of the factors.
+Notice that the complexity of the differential equations system is reduced entirely by imposing the equality of the factors. The above differential equation
+for the scale factor can be solved analytically in terms of the inverse hypergeometric function. Additionally, it can be solved numerically.
 
 \subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
 
