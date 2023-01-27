@@ -314,6 +314,25 @@ which in terms of only the scale factors
 Notice that the complexity of the differential equations system is reduced entirely by imposing the equality of the factors. The above differential equation
 for the scale factor can be solved analytically in terms of the inverse hypergeometric function. Additionally, it can be solved numerically.
 
+Next, lets work the Starobinsky's potential $\mathcal{V}(\phi) = \alpha \left(1 - e^{-\beta\phi}\right)^2$, then the system of differential equations
+is written as 
+\begin{align}
+  0 & = 6h\dot{h} + 6\beta\left(h^2 + \dot{h}\right)\dot{\phi} + 2\beta C\dot{\phi}^3 + 3\ddot{h} - 3e^{\beta\phi}\left(2h\dot{h} + \ddot{h}\right) \\
+  0 & = -h\dot{g} + g\left(2h^2 + 3\dot{h} + C\dot{\phi}^2\right) \\
+  0 & =  2e{-\beta\phi}\left(gh + \dot{g}\right)\dot{\phi} + \left(1 - e^{-\beta\phi}\right)\left(h\left(2gh + \dot{g}\right) - g\dot{h} - \ddot{g}\right)
+\end{align}
+which can be rewritten just like the previous case in terms of the scale factor as
+\begin{align}
+  0 & = 3\left(-1 + e^{\beta\phi}\right)\dot{a}\ddot{a} + a\left(2\beta a C \dot{\phi}^3 + 6 \beta \dot{\phi}\ddot{a} - 3\left(-1 + e^{\beta\phi}\right)\right) \\
+  0 & = -\frac{2\dot{a}^2}{a} + aC\dot{\phi}^2 + 2\ddot{a}\\
+  0 & = 4\left(-1 + e^{\beta\phi}\right)\dot{a}^3 + 4\beta a \dot{a}^2\dot{\phi} - 3\left(-1 + e^{\beta\phi}\right)a\dot{a}\ddot{a} + a^2\left(2\beta\dot{\phi}\ddot{a} - \dddot{a}\left(-1 + e^{\beta\phi}\right)\right)
+\end{align}
+then, we introduce the new variables
+\begin{align}
+  \ddot{a}(t) & = \dot{u}(t) & \dddot{a}(t) & = \ddot{u} & \Phi (t) = (1 - e^{-\beta\phi})
+\end{align}
+
+
 \subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
 
 Under the symmetries of the cosmological ansatz we only have one equation 
@@ -506,7 +525,5 @@ the field equation for the scalar is given by the Klein-Gordon field equation, r
   \ddot{\phi}(t) + 3H(t)\dot{\phi}(t) + \Lambda b_0 \mathcal{V}'(\phi) = 0
 \end{equation}
 Thus we are able to recover Einstein-Hillbert coupled with a scalar field.
-
-
 
 \end{document}
