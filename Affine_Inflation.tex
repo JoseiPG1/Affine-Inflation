@@ -216,6 +216,22 @@ Here we have two differential equations named
 \begin{align}
   \dot{h} + h^2 & = 0 & \dot{g} + gh + 2\kappa & = 0
 \end{align}
+The two equations can be solved exactly as
+\begin{align}
+  h(t) & = \frac{1}{t - h_0} & g(t) & =  \frac{t\kappa\left(2h_0 - t\right) - g_0}{t - h_0}
+\end{align}
+
+Under the assumption $h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$ the equaitons are
+\begin{align}
+  \frac{\ddot{a}}{a} & = 0 & \ddot{a}a + 2\left(\kappa + \dot{a}^2\right) & = 0
+\end{align}
+then the solutions are
+\begin{align}
+  a(t) & = t\sqrt{-\kappa} + a_0 & h(t) & = \frac{\sqrt{-\kappa}}{t\sqrt{-\kappa} + a_0} & g(t) & = \sqrt{-\kappa}\left(t\sqrt{-\kappa} + a_0\right)
+\end{align}
+Notice that under the above assumptions, we have restrictions for the geometry factor $\kappa$, meaning that it can only take
+values as $0$ and $-1$ to have a real geometry, whereas in the pure affine geometry, there is no constraint for $\kappa$.
+
 
 \subsection{$\nabla_{\alpha}\mathcal{R}_{\beta\gamma}  = 0$}
 
