@@ -168,6 +168,8 @@ connection $\Gamma_{\mu}{}^{\sigma}{}_{\nu}$ is
       \Gamma_{t}{}^{t}{ }_{t} & =f(t), \quad \Gamma_{i}{ }^{t}{ }_{j}=g(t) S_{i j} \\
       \Gamma_{t}{ }^{i}{ }_{j} &= h(t) \delta^{i}_{j}, \quad \Gamma_{i}{ }^{j}{ }_{k}= \gamma_{i}{ }^{j}{ }_{k}
 \end{align}
+Notice that $f(t)$ affine function can vanishes completely by a time reparametrization.
+
 Since we are going to be working in the torsio-free sector, in principle there is no neccesity to compute the ansatz for the torsion tensor, however, just
 for the sake of completness, we are going to include them. The traceless part of the torsion tensor $\mathcal{B}_{\mu}{}^{\sigma}{}_{\nu}$ is completely define by only one time depending function
 \begin{align*}
@@ -196,9 +198,42 @@ equation is reduced even further to
 \end{equation}
 This is the field equation in Polynomial Affine Graivity coupled with a scalar field in the torsion-free sector.
 
-\section{Cosmolpgical solutions}
+\section{Cosmological solutions in purely PAG}
 
-\section{Cosmological Solutions with the scalar field $\phi$}
+The field equation its given by 
+\begin{equation}
+  \nabla_{[\alpha}\mathcal{R}_{\beta]\gamma} = 0
+\end{equation}
+from here we distinguish three types of families solutions
+\begin{align}
+  \mathcal{R}_{\beta\gamma} & = 0 & \nabla_{\alpha}\mathcal{R}_{\beta\gamma} & = 0 & \nabla_{[\alpha]}\mathcal{R}_{\beta]\gamma} = 0
+\end{align}
+Here we briefly review all the possible solutions to the field equations under the cosmological ansatz.
+
+\subsection{$\mathcal{R}_{\beta\gamma} = 0$}
+
+Here we have two differential equations named
+\begin{align}
+  \dot{h} + h^2 & = 0 & \dot{g} + gh + 2\kappa & = 0
+\end{align}
+
+\subsection{$\nabla_{\alpha}\mathcal{R}_{\beta\gamma}  = 0$}
+
+Here we have three differential equations named
+\begin{align}
+  \ddot{h} + 2h\dot{h} & = 0 \\
+  2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} & = 0 \\
+  2gh^2 + 4\kappa h + h\dot{g} - g\dot{h} - \ddot{g} & = 0
+\end{align}
+
+\subsection{$\nabla_{[\alpha}\mathcal{R}_{\beta]\gamma}  = 0$}
+
+Here we have one differential equation named
+\begin{align}
+  4gh^2 + 2\kappa h + 2g\dot{h} - \ddot{g} = 0
+\end{align}
+
+\section{Cosmological solutions with the scalar field $\phi$}
 
 The field equation in the torsion-free sector coupled with a scalar field is given by
 \begin{equation}
