@@ -196,10 +196,9 @@ equation is reduced even further to
 \end{equation}
 This is the field equation in Polynomial Affine Graivity coupled with a scalar field in the torsion-free sector.
 
+\section{Cosmolpgical solutions}
 
-
-
-\section{Cosmological Solutions}
+\section{Cosmological Solutions with the scalar field $\phi$}
 
 The field equation in the torsion-free sector coupled with a scalar field is given by
 \begin{equation}
@@ -331,6 +330,40 @@ then, we introduce the new variables
 \begin{align}
   \ddot{a}(t) & = \dot{u}(t) & \dddot{a}(t) & = \ddot{u} & \Phi (t) = (1 - e^{-\beta\phi})
 \end{align}
+in the new variables, the system of differential equations is rewritten as
+\begin{align}
+  0 & = 2\beta\dot{\phi}\left(3\dot{u} + a C\dot{\phi}^2\right) + 3e^{\beta\phi}\Phi \left(h\dot{u} - \ddot{u}\right) \\
+  0 & = 2\dot{u} + a\left(-2h^2 + C\dot{\phi}^2\right) \\
+  0 & = 2e^{-\beta\phi}\left(2ah^2 + \dot{u}\right)\dot{\phi} + \Phi\left(4ah^3 - 3h\dot{u}\ddot{u}\right)
+\end{align}
+from the third equation we can find an expression for the scale factor 
+\begin{equation}
+  a = \frac{-2\beta\dot{u}\dot{\phi} + e^{\beta\phi}\left(3h\dot{u} + \ddot{u}\right)}{4h^2\left(e^{\beta\phi}h\Phi + \beta\dot{\phi}\right)}
+\end{equation}
+reeplacing the above expression in the first and second equation leads to
+\begin{align}
+  0 & = \ddot{u} -\dot{u}\left( h + \frac{2e^{-\beta\phi}\beta\dot{\phi}}{\Phi} + \frac{4\beta C h\dot{\phi}^3}{6e^{\beta\phi}h^3\Phi + 6\beta h^2 \dot{\phi} - \beta C\dot{\phi}^3}\right) \\
+  0 & = \ddot{u} -\dot{u}\left(\frac{e^{\beta\phi}\left(-2\beta\dot{\phi}\left(-6h^2 + C\dot{\phi}^2\right) + e^{\beta\phi}h\Phi \left(2h^2 + 3C\dot{\phi}^2\right)\right)}{\Phi \left(2h^2 - C\dot{\phi}^2\right)}\right)
+\end{align}
+comparing both coefficients 
+\begin{equation}
+  h + \frac{2e^{-\beta\phi}\beta\dot{\phi}}{\Phi} + \frac{4\beta C h\dot{\phi}^3}{6e^{\beta\phi}h^3\Phi + 6\beta h^2 \dot{\phi} - 
+  \beta C\dot{\phi}^3} = \frac{e^{\beta\phi}\left(-2\beta\dot{\phi}\left(-6h^2 + C\dot{\phi}^2\right) + e^{\beta\phi}h\Phi 
+  \left(2h^2 + 3C\dot{\phi}^2\right)\right)}{\Phi \left(2h^2 - C\dot{\phi}^2\right)}
+\end{equation}
+after some simplification yields one equation
+\begin{equation}
+  0 = 2e^{-\beta \phi}h \left(e^{\beta\phi}h\Phi + \beta\dot{\phi}\right)\left(6\beta h^2 + 3e^{\beta\phi}C h\Phi \dot{\phi} - \beta C\dot{\phi}^2\right)
+\end{equation}
+notice that we can solve the first differential equation to find a relation between the scale factor and the scalar field
+\begin{equation}
+  \dot{\phi} + \frac{\dot{a}\left(-1 + e^{\beta\phi}\right)}{a\beta} = 0 \to \phi (t) = \frac{1}{\beta}\log\left(\frac{a}{ae^{\beta \phi_0} + a}\right)
+\end{equation}
+reeplacing the above the relation in the two equations leads to the same differential equations, which written in the original variables is
+\begin{align}
+  \dddot{a} + 5\frac{\ddot{a}\dot{a}}{a} = 0
+\end{align}
+Notice that this is the same equation for the \textit{Power-Law} potential.
 
 
 \subsection{$\nabla_{[\eta} \mathcal{S}_{\mu]\nu} = 0 $}
