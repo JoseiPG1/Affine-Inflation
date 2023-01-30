@@ -9,7 +9,7 @@
 \usepackage{slashed}
 
 
-\title{Affine Inflation in Polynomial Affine Gravity in $3+1$ dimensions}
+\title{Affine Inflation in Polynomial Affine Gravity in $3+1$ dimensions in the torsion-free sector}
 \author{Jose Perdiguero Garate}
 \date{20/12/2022}			
 
@@ -307,6 +307,17 @@ can do is to solve the scalar field $\phi(t)$ in terms of the time derivative of
   g(t) & = e^{- \int \mathrm{d}t \, h} \left( g_0 - 2 \kappa \int \mathrm{d}t \, e^{\int \mathrm{d}t \, h} \right)
 \end{align}
 
+If one desires to work in the frame where $h(t) = \dot{a}/a$ and $g(t) = \dot{a}a$, then the field equations are
+\begin{align}
+  \frac{\ddot{a}}{a} + C\dot{\phi}^2 & = 0 & 2\left(\kappa + \dot{a}^2\right) + a\ddot{a} & = 0
+\end{align}
+then, the scalar field is given by
+\begin{equation}
+  \phi(t) = \phi_0 \pm \int \sqrt{\frac{-\ddot{a}}{Ca}}d\hat{t}
+\end{equation}
+whereas the scale factor is given in temrs of an inverse function of the hypergeometric $2F_1$ function. In order to have a real scale factor, $\kappa$ 
+can not take the null value.
+
 
 \subsection{$\nabla_{\eta} \mathcal{S}_{\mu\nu} = 0 $}
 
@@ -567,6 +578,7 @@ the las type
   \mathcal{R}_{\alpha\beta}{}^{\sigma}{}_{\sigma}\mathrm{d}V^{\alpha\beta\mu\nu}
 \end{equation*}
 both terms are trivial through Bianchi's identity and the antisymmetry of the volumen element. 
+
 
 \section{Appendix B: GR as a subspace of PAG}
 

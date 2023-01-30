@@ -10,9 +10,9 @@
 \contentsline {section}{\numberline {4}Cosmological solutions with the scalar field $\phi $}{5}{}%
 \contentsline {subsection}{\numberline {4.1}$\mathcal {S}_{\mu \nu } = 0 $}{5}{}%
 \contentsline {subsection}{\numberline {4.2}$\nabla _{\eta } \mathcal {S}_{\mu \nu } = 0 $}{6}{}%
-\contentsline {subsection}{\numberline {4.3}$\nabla _{[\eta } \mathcal {S}_{\mu ]\nu } = 0 $}{8}{}%
-\contentsline {section}{\numberline {5}Conclusions}{8}{}%
-\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{8}{}%
+\contentsline {subsection}{\numberline {4.3}$\nabla _{[\eta } \mathcal {S}_{\mu ]\nu } = 0 $}{9}{}%
+\contentsline {section}{\numberline {5}Conclusions}{9}{}%
+\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{9}{}%
 \contentsline {subsection}{\numberline {6.1}Building the action}{9}{}%
 \contentsline {subsection}{\numberline {6.2}Coupling the scalar field $\phi $}{9}{}%
-\contentsline {section}{\numberline {7}Appendix B: GR as a subspace of PAG}{10}{}%
+\contentsline {section}{\numberline {7}Appendix B: GR as a subspace of PAG}{11}{}%
