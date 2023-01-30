@@ -6,7 +6,7 @@
 \contentsline {section}{\numberline {3}Cosmological solutions in purely PAG}{4}{}%
 \contentsline {subsection}{\numberline {3.1}$\mathcal {R}_{\beta \gamma } = 0$}{4}{}%
 \contentsline {subsection}{\numberline {3.2}$\nabla _{\alpha }\mathcal {R}_{\beta \gamma } = 0$}{4}{}%
-\contentsline {subsection}{\numberline {3.3}$\nabla _{[\alpha }\mathcal {R}_{\beta ]\gamma } = 0$}{4}{}%
+\contentsline {subsection}{\numberline {3.3}$\nabla _{[\alpha }\mathcal {R}_{\beta ]\gamma } = 0$}{5}{}%
 \contentsline {section}{\numberline {4}Cosmological solutions with the scalar field $\phi $}{5}{}%
 \contentsline {subsection}{\numberline {4.1}$\mathcal {S}_{\mu \nu } = 0 $}{5}{}%
 \contentsline {subsection}{\numberline {4.2}$\nabla _{\eta } \mathcal {S}_{\mu \nu } = 0 $}{5}{}%

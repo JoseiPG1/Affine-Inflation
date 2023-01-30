@@ -221,7 +221,7 @@ The two equations can be solved exactly as
   h(t) & = \frac{1}{t - h_0} & g(t) & =  \frac{t\kappa\left(2h_0 - t\right) - g_0}{t - h_0}
 \end{align}
 
-Under the assumption $h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$ the equaitons are
+Under the assumption $h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$ the equations are
 \begin{align}
   \frac{\ddot{a}}{a} & = 0 & \ddot{a}a + 2\left(\kappa + \dot{a}^2\right) & = 0
 \end{align}
@@ -241,6 +241,21 @@ Here we have three differential equations named
   2gh^2 - 2\kappa h - h\dot{g} + 3g\dot{h} & = 0 \\
   2gh^2 + 4\kappa h + h\dot{g} - g\dot{h} - \ddot{g} & = 0
 \end{align}
+The system of differential equations can be solve analytically by the functions
+\begin{align}
+  h(t) & = \sqrt{c_0}\tanh\left(\sqrt{c_0}t\right) & g(t) & = \frac{\kappa \sinh{2t\sqrt{c_0}}}{2\sqrt{c_0}} 
+\end{align}
+Notice that for a flat space-time requirement $\kappa = 0$, then the $g(t)$ affine functions vanishes, while the $h(t)$ remains un changed.
+
+Under the assumption $h(t) = \frac{\dot{a}}{a}$ and $g(t) = \dot{a}a$ the equations are
+\begin{align}
+  \dddot{a}a - \dot{a}\ddot{a} & = 0 & \kappa + \dot{a}^2 - a\ddot{a} & = 0 & \frac{4\dot{a}\left(\kappa + \dot{a}^2\right)}{a} - 3\dot{a}\ddot{a} - a\dddot{a} & = 0
+\end{align}
+there are to type of solutions
+\begin{align}
+  a(t) = e^{-c_1} \tanh\left(e^{-c_1} \left(t + c_2\right)\right)\sqrt{\frac{\kappa}{\frac{-1}{\cosh^2\left({e^{c_1}\left(t + c_2\right)}\right)}}}
+\end{align}
+Notice that to have a real scale factor, it is necessary to have $\kappa = -1$.
 
 \subsection{$\nabla_{[\alpha}\mathcal{R}_{\beta]\gamma}  = 0$}
 
