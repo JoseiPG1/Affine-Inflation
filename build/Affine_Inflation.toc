@@ -15,4 +15,5 @@
 \contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{9}{}%
 \contentsline {subsection}{\numberline {6.1}Building the action}{9}{}%
 \contentsline {subsection}{\numberline {6.2}Coupling the scalar field $\phi $}{9}{}%
-\contentsline {section}{\numberline {7}Appendix B: GR as a subspace of PAG}{11}{}%
+\contentsline {section}{\numberline {7}Appendix B: Time coordinate reparametrization}{11}{}%
+\contentsline {section}{\numberline {8}Appendix C: GR as a subspace of PAG}{11}{}%

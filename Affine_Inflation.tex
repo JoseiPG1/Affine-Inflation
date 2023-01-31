@@ -131,9 +131,9 @@ To couple the affine action to a scalar field, we need to introduce a kinetic te
 \textit{inverse symmetric tensor densities}, by using the \textit{dimensional analysis structure technique}
 
 \begin{equation}
-      \mathrm{g}^{\mu\nu} = \left(\alpha \nabla_\lambda \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma} + \beta \mathcal{A}_\lambda 
-      \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma}\right)\mathrm{d}V^{\nu\lambda\rho\sigma} + \gamma \mathcal{B}_{\kappa}{ }^{\mu}{ }_{\lambda}
-      \mathcal{B}_{\rho}{ }^{\nu}{ }_{\sigma}\mathrm{d}V^{\kappa\lambda\rho\sigma}
+    \mathrm{g}^{\mu\nu} = \left(\alpha \nabla_\lambda \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma} + \beta \mathcal{A}_\lambda 
+    \mathcal{B}_{\rho}{ }^{\mu}{ }_{\sigma}\right)\mathrm{d}V^{\nu\lambda\rho\sigma} + \gamma \mathcal{B}_{\kappa}{ }^{\mu}{ }_{\lambda}
+    \mathcal{B}_{\rho}{ }^{\nu}{ }_{\sigma}\mathrm{d}V^{\kappa\lambda\rho\sigma}
 \end{equation}
 
 Using the above expression we can define the kinetic term 
@@ -148,14 +148,9 @@ Riemman tensor will vanish completly. Applying the same idea the to the scalar f
 the effective action coupled with a scalar field is
 
 \begin{equation*}
-    \begin{split}
-      S_{ef}
-      & =
-      \int  \mathrm{d}V^{\alpha \beta \gamma \delta} \bigg[
-      C_1 \mathcal{R}_{\mu\alpha}{}^{\mu}{}_{\nu} - \alpha \partial_{\alpha}\phi \partial_{\nu}
-      \bigg]\nabla_\beta \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}.
-    \end{split}
-  \end{equation*}
+    S_{ef} = \int  \mathrm{d}V^{\alpha \beta \gamma \delta} \bigg[ C_1 \mathcal{R}_{\mu\alpha}{}^{\mu}{}_{\nu} - 
+    \alpha \partial_{\alpha}\phi \partial_{\nu}\bigg]\nabla_\beta \mathcal{B}_{\gamma}{}^{\nu}{}_{\delta}.
+\end{equation*}
 
 
 \subsection{Cosmological ansatz}
@@ -460,6 +455,11 @@ Under the symmetries of the cosmological ansatz we only have one equation
   C\mathcal{V}(\phi)g\dot{\phi}^2 + \mathcal{V}(\phi)\left(4gh^2 +2\kappa h + 2g\dot{h} - \ddot{g}\right) +
   \mathcal{V}'(\phi)\dot{\phi}\left(gh + 2\kappa + \dot{g}\right) = 0
 \end{equation}
+Notice that here, we have the two affine functions $h(t)$ and $g(t)$, additionally, we have the scalar field $\phi (t)$ and its potential energy term
+$\mathcal{V}(\phi)$. Since we have one differential equation we can not find an analytically solution, even when the potential energy term is given.
+
+If one desires to work in the frame where $h(t) = \dot{a}/a$ and $g(t) = \dot{a}a$, then the field equation will have three unknown
+functions $a(t)$, $\phi(t)$, and $\mathcal{V}(\phi)$, which can not be solved analytically.
 
 \section{Conclusions}
 
@@ -579,8 +579,34 @@ the las type
 \end{equation*}
 both terms are trivial through Bianchi's identity and the antisymmetry of the volumen element. 
 
+\section{Appendix B: Time coordinate reparametrization}
 
-\section{Appendix B: GR as a subspace of PAG}
+Under a coordinate transformation, the connection's coefficients changes as
+\begin{equation}
+  \frac{\partial^2 x^i}{\partial x^{'a}\partial x^{'b}} + \Gamma_{j}{}^{i}{}_{k}\frac{\partial x^j}{\partial x^{'a}}\frac{\partial x^k}{\partial x^{'b}} 
+  = \Gamma'_{a}{}^{c}{}_{b}\frac{\partial x^i}{\partial x^{'c}}
+\end{equation}
+Next, consider a transformation of the form
+\begin{align}
+  t' & = t'(t) & r' & = r & \theta ' & = \theta & \phi' & = \phi
+\end{align}
+Then, we can find a \textit{coordinate system} where the connection's coefficients $\Gamma'_{0}{}^{0}{}_{0} = 0$ vanishes completely
+\begin{equation}
+  \frac{\partial^2 t}{\partial t^{'2}} + f \left(\frac{\partial t}{\partial t^{'}}\right)^2 = 0
+\end{equation}
+which can be written as a total derivative
+\begin{equation}
+  \frac{1}{X}\partial_{t'}\left(X \partial_{t'}t\right) = 0
+\end{equation}
+for $f = \frac{1}{X}\partial_t X$. From here, one have that
+\begin{equation}
+  t^{'} = \int \mathrm{d}t e^F(t)
+\end{equation}
+where $X = e^{\int \mathrm{d}t f(t)} = e^{F(t)}$. With the above transformation, it can be checked with ease that the effect of the time
+reparametrisation is a scaling of the other time functions entering in the connection $g(t) \to g(t')$ and $h(t) \to h(t')$.
+
+
+\section{Appendix C: GR as a subspace of PAG}
 
 The field equation is given by
 \begin{equation}
