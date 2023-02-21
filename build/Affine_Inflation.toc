@@ -3,7 +3,7 @@
 \contentsline {subsection}{\numberline {2.1}The action}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Cosmological ansatz}{3}{}%
 \contentsline {subsection}{\numberline {2.3}The field equations}{3}{}%
-\contentsline {section}{\numberline {3}Cosmological solutions in purely PAG}{4}{}%
+\contentsline {section}{\numberline {3}Briefly review of vacuum solutions}{4}{}%
 \contentsline {subsection}{\numberline {3.1}$\mathcal {R}_{\beta \gamma } = 0$}{4}{}%
 \contentsline {subsection}{\numberline {3.2}$\nabla _{\alpha }\mathcal {R}_{\beta \gamma } = 0$}{4}{}%
 \contentsline {subsection}{\numberline {3.3}$\nabla _{[\alpha }\mathcal {R}_{\beta ]\gamma } = 0$}{5}{}%
@@ -12,8 +12,8 @@
 \contentsline {subsection}{\numberline {4.2}$\nabla _{\eta } \mathcal {S}_{\mu \nu } = 0 $}{6}{}%
 \contentsline {subsection}{\numberline {4.3}$\nabla _{[\eta } \mathcal {S}_{\mu ]\nu } = 0 $}{9}{}%
 \contentsline {section}{\numberline {5}Conclusions}{9}{}%
-\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{9}{}%
-\contentsline {subsection}{\numberline {6.1}Building the action}{9}{}%
-\contentsline {subsection}{\numberline {6.2}Coupling the scalar field $\phi $}{9}{}%
-\contentsline {section}{\numberline {7}Appendix B: Time coordinate reparametrization}{11}{}%
-\contentsline {section}{\numberline {8}Appendix C: GR as a subspace of PAG}{11}{}%
+\contentsline {section}{\numberline {6}Appendix A: Dimensional Analysis}{10}{}%
+\contentsline {subsection}{\numberline {6.1}Building the action}{10}{}%
+\contentsline {subsection}{\numberline {6.2}Coupling the scalar field $\phi $}{10}{}%
+\contentsline {section}{\numberline {7}Appendix B: Time coordinate reparametrization}{12}{}%
+\contentsline {section}{\numberline {8}Appendix C: GR as a subspace of PAG}{12}{}%
